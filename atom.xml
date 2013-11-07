@@ -4,7 +4,7 @@
   <title><![CDATA[rock's buzz]]></title>
   <link href="http://rockdai.github.io/atom.xml" rel="self"/>
   <link href="http://rockdai.github.io/"/>
-  <updated>2013-11-07T23:50:50+08:00</updated>
+  <updated>2013-11-07T23:54:55+08:00</updated>
   <id>http://rockdai.github.io/</id>
   <author>
     <name><![CDATA[rockdai]]></name>
@@ -12,5 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[hello world]]></title>
+    <link href="http://rockdai.github.io/blog/2013/11/07/hello-world/"/>
+    <updated>2013-11-07T23:53:00+08:00</updated>
+    <id>http://rockdai.github.io/blog/2013/11/07/hello-world</id>
+    <content type="html"><![CDATA[<p>第一篇文章</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;try to type some codes!&#39;</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
   
 </feed>
