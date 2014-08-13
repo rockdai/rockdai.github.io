@@ -8,7 +8,6 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   <meta name="format-detection" content="telephone=no">
   <title>rockdai.com</title>
-  <script src="http://libs.useso.com/js/Base64/0.3.0/base64.min.js"></script>
   <script src="http://libs.useso.com/js/json2/20130526/json2.min.js"></script>
   <script src="http://libs.useso.com/js/jquery/2.1.1/jquery.min.js"></script>
   <script src="./git_matrix.js"></script>
@@ -18,11 +17,13 @@
     body {
       margin: 0;
       padding: 0;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
     }
     #chart {
       position: relative;
-      width: 700px;
-      height: 400px;
+      width: 100%;
+      min-height: 400px;
       overflow-x: auto;
     }
     .rect:hover {
@@ -32,8 +33,15 @@
 </head>
 
   <body>
+    <div id="loading">
+      <img src="http://rockdai.u.qiniudn.com/loading.$6839.gif" />
+    </div>
     <div id="chart"></div>
     <script>
+      function decodeFromBase64(input) {
+        input = input.replace(/\s/g, '');
+        return atob(input);
+      }
       var startDate = new Date("2014-07-01");
       var endDate = new Date();
       var gridSize = 14;
@@ -54,8 +62,9 @@
           'Content-Type': 'application/json;charset=UTF-8'
         },
         success: function (data) {
+          $('#loading').hide();
           data = data || {};
-          data = atob(data.content);
+          data = decodeFromBase64(data.content);
           data = JSON.parse(data);
           gitMatrix.loadData(data);
           gitMatrix.render();
