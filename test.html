@@ -8,15 +8,10 @@
 </head>
 
 <body>
-  <div id="output1"></div>
-  <div id="output2"></div>
+  <div id="output"></div>
   <script>
-    var output1Node = document.getElementById('output1');
-    var output2Node = document.getElementById('output2');
-
-    output2Node.innerHTML = btoa('®');
-
-    output1Node.innerHTML = atob('aGVsbG8gd2\n9ybGQ=');
+    var outputNode = document.getElementById('output');
+    outputNode.innerHTML = atob('aGVsbG8gd2\n9ybGQ=');
   </script>
 </body>
 </html>
