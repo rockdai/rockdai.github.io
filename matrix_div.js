@@ -32,6 +32,7 @@
 		var getColor = conf.getColor;
 		var getX = conf.getX;
 		var getY = conf.getY;
+		var rectTouch = conf.rectTouch;
 
 		var paper = $('<div>').addClass('paper').css({
 			"width": conf.width,

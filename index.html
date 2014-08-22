@@ -23,8 +23,8 @@
     #chart {
       position: relative;
       width: 100%;
-      min-height: 400px;
       overflow-x: auto;
+      min-height: 140px;
     }
     .rect:hover {
       border: 1px groove #000;
@@ -37,20 +37,42 @@
       <img src="http://rockdai.u.qiniudn.com/loading.$6839.gif" />
     </div>
     <div id="chart"></div>
+    <div id="info"></div>
     <script>
+      var infoNode = $('#info');
+      var BASE_DATE = new Date('2014-07-01');
+      var textList = ["没能坚持！！", "控制饮食", "控制饮食+稍许运动", "控制饮食+大量运动"];
       function decodeFromBase64(input) {
         input = input.replace(/\s/g, '');
         return atob(input);
       }
+      function pad(n) {
+        return n < 10 ? '0' + n : '' + n;
+      }
+      function formatDate(date) {
+        var year = date.getFullYear();
+        var month = date.getMonth() + 1;
+        var day = date.getDate();
+        return [year, pad(month), pad(day)].join('-');
+      }
+      function onClickEvent(evt, data) {
+        if (!data || typeof data.id !== 'number') {
+          return false;
+        }
+        var d = BASE_DATE.valueOf() + (data.id * 3600 * 24 * 1000);
+        var ds = formatDate(new Date(d));
+        infoNode.text(ds + ': ' + textList[data.value]);
+      }
+
       var startDate = new Date("2014-07-01");
       var endDate = new Date();
       var gridSize = 14;
-      var textList = ["没能坚持！！", "控制饮食", "控制饮食+稍许运动", "控制饮食+大量运动"];
       var gitMatrix = new Chart.GitMatrix("chart", {
         "startDate": startDate,
         "endDate": endDate,
         "gridSize": gridSize,
-        "textList": textList
+        "textList": textList,
+        "touchstart": onClickEvent
       });
 
       var url = 'https://api.github.com/repos/rockdai/my_diet/contents/data.json';
