@@ -167,7 +167,7 @@
     var mouseover = conf.mouseover;
     var mouseout = conf.mouseout;
 
-    dom.on('click', function (e) {
+    dom.on('touchend', function (e) {
     	var target = $(e.target);
       var info = target.data('info');
     	click(e, info);
