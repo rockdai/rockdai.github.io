@@ -41,7 +41,7 @@
 			source.push({"week": week, "day": day, "value": 0, "id": i});
 			date.setDate(date.getDate() + 1);
 		}
-		
+
 		function setData (item) {
 			var date = new Date(item[0].toString());
 			var dDay = parseInt((date - startDate) / 1000 / 60 / 60 /24);
@@ -171,16 +171,19 @@
     	var target = $(e.target);
       var info = target.data('info');
     	click(e, info);
+      return false;
     });
     dom.on('mouseover', function (e) {
     	var target = $(e.target);
       var info = target.data('info');
     	mouseover(e, info);
+      return false;
     });
     dom.on('mouseout', function (e) {
     	var target = $(e.target);
       var info = target.data('info');
     	mouseout(e, info);
+      return false;
     });
 	};
 })(window.Chart = window.Chart || {});
