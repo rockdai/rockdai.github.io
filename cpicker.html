@@ -17,6 +17,12 @@
       font-family: 'Helvetica Neue', Helvetica, Arial, 'Microsoft YaHei', 'Microsoft JhengHei', STHeiti, MingLiu;
       color: #000000;
     }
+    h1 {
+      margin: 10px 0;
+    }
+    .options-panel {
+      margin: 10px 0;
+    }
     .txt {
       width: 49%;
       height: 600px;
@@ -31,6 +37,10 @@
 <body>
   <h1>column picker</h1>
   <div class="container">
+    <div class="options-panel">
+      <input type="checkbox" id="line-break">
+      <label for="line-break">换行</label>
+    </div>
     <textarea class="txt input"></textarea>
     <textarea class="txt output"></textarea>
   </div>
@@ -38,10 +48,9 @@
   <script>
     var inputNode = $('.input');
     var outputNode = $('.output');
-    inputNode.on('input propertychange', function (evt) {
-      outputNode.val(parseCmdDesc(inputNode.val()).join(','));
-    });
+    var lineBreakNode = $('#line-break');
 
+    // Parse command `desc` results into columns array.
     function parseCmdDesc(str) {
       str = str.trim();
       if (str.indexOf('|') !== 0) {
@@ -59,5 +68,29 @@
       });
       return res;
     }
+
+    function renderResult() {
+      var cols = parseCmdDesc(inputNode.val());
+      if (lineBreakNode.prop('checked')) {
+        var connector = ',\n';
+      } else {
+        var connector = ',';
+      }
+      outputNode.val(cols.join(connector));
+    }
+
+    inputNode.on('input propertychange', renderResult);
+
+    var storage = window.localStorage;
+    if (storage) {
+      lineBreakNode.prop('checked', storage.getItem('lineBreak') === 'true');
+    }
+    lineBreakNode.on('change', function (evt) {
+      if (storage) {
+        storage.setItem('lineBreak', lineBreakNode.prop('checked'));
+      }
+      renderResult();
+    });
+
   </script>
 </body>
