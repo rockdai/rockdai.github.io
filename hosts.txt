@@ -1,10 +1,908 @@
 #+BEGIN
-#+UPDATE_TIME 2014-10-21 13:55:00
+#+UPDATE_TIME 2014-10-23 14:39:00
+#+MESSAGE
+#######################################################################
+#
+#  imouto.host
+#
+#  主页：https://plus.google.com/100484131192950935968/about
+#  社群：https://plus.google.com/communities/111265655058678013030
+#  GitHub：https://github.com/zxdrive/imouto.host
+#  部署hosts文件前请注意文本编码和换行符格式，请勿直接对文件进行覆盖。
+#  错误报告前请尝试更新到最新版本，不接受老版本的错误报告。
+#
+#  #Ver : 2.22.0519 Asata Shino
+#  #Update Time : 2014.10.23;14:39
+#  #Fix & Bug :
+#  # 2.22.0519: 修复谷歌服务。
+#  # 2.22.0518: 修复谷歌服务。
+#  # 2.21.0516: 修复DuckDuckGo。
+#  # 2.21.0515: 修复Gmail联系人。
+#  # 2.21.0514: 尝试修复环聊图片。
+#  # 2.21.0513: 尝试修复环聊图片。
+#  # 2.20.0511: 补充数个谷歌域名，感谢GitHub网友LGA1150。
+#  # 2.20.0510: 修复谷歌服务。
+#  # 2.19.0509: 补充数个谷歌域名。
+#  # 2.19.0507: 修复Facebook。
+#  # 2.18.0505: 尝试加速谷歌服务。
+#  # 2.18.0503: 格式梳理，提升可读性。
+#  # 2.18.0502: 支持feedly。
+#  # 2.18.0501: 尝试加速G+、Gmail等。
+#  # 2.17.0498: 修复Ixquick，Startpage，GreatFire，感谢GitHub网友wenketel。
+#  # 2.17.0495: 修复和尝试加速谷歌图床，感谢GitHub网友wenketel。
+#  # 2.17.0493: 补充Flickr域名，感谢网友Jack YouOSX。
+#  # 2.17.0492: 加速DuckDuckGo，感谢GitHub网友wenketel。
+#  # 2.17.0491: 增加play.golang.org映射，感谢GitHub网友ljyf5593。
+#  # 2.17.0490: 补充数个谷歌域名，感谢网友Pluto Hades。
+#  # 2.17.0489: 修复FlipBoard，感谢网友Lee Chieh Chan。
+#  # 2.16.0488: 修复DuckDuckGo，感谢网友Christin Chow、Jack YouOSX。
+#  # 2.16.0487: 修复数个格式问题，感谢网友u yao。
+#  # 2.16.0486: 修复数个谷歌域名，感谢网友Jack YouOSX、Arterial Ra。
+#  # 2.16.0485: 尝试解决Google流量劣化，但效果不佳，目前电信用户访问谷歌服务可能较为困难。
+#  # 2.16.0484: 修复Flickr。
+#  # 2.16.0483: 更新Youtube域名，感谢网友Jack YouOSX。
+#  # 2.16.0482: 更新Youtube域名，感谢网友Jack YouOSX。
+#  # 2.16.0481: 新看板娘：朝田诗乃(Asata Shino)。
+#  # 2.15.0480: 尝试修复Dropbox移动客户端。
+#  # 2.15.0479: 其它BUG修正。
+#  # 2.14.0478: 补充广告屏蔽。
+#  # 2.14.0477: 尝试修复Dropbox移动客户端。
+#  # 2.14.0476: 修复谷歌硬盘。
+#  # 2.13.0475: 尝试加速维基百科。
+#  # 2.13.0475: 其它谷歌域名修复和补充。
+#  # 2.13.0475: 修复谷歌开发者，感谢网友Arterial Ra。
+#  # 2.13.0475: 修复大部分Youtube视频，感谢网友Jack YouOSX。
+#  # 2.13.0475: 补充谷歌硬盘域名，感谢网友Jack YouOSX。
+#  # 2.13.0475: 尝试加速谷歌硬盘。
+#  # 2.12.0471: 尝试补充谷歌硬盘域名，未经完整测试。
+#  # 2.12.0471: 修复Google服务，少量BUG修正。
+#  # 2.11.0468: 两个文件合并。
+#  # 2.11.0468: 少量BUG修正。
+#  # 2.10.0466: 修复Google服务。
+#  # 2.09.0463: 修复Google+。
+#  # 2.08.0462: 修复Google服务。
+#  # 2.07.0458: 修复Google服务。
+#  # 2.06.0457: 其它BUG修正。
+#  # 2.06.0457: 尝试修复Chrome远程桌面，感谢网友诸葛氧气。
+#  # 2.05.0453: 其它BUG修正。
+#  # 2.05.0453: 加速维基百科。
+#  # 2.05.0453: 修复Facebook移动版。
+#  # 2.04.0450: 尝试修复Dropbox。
+#  # 2.03.0449: 其它BUG修正。
+#  # 2.03.0449: 尝试彻底修复环聊。
+#  # 2.03.0449: 修复Youtube（依然不能看片别做梦了）。
+#  # 2.02.0446: 新看板娘：佐仓千代(Sakura Chiyo)。
+#  # 2.02.0446: 修复和加速各种Google服务。
+#  # 2.01.0442: 修复和加速各种Google服务。
+#  # 1.94.0440: 修复Chrome压缩服务，未测试，感谢网友Yiwen Zhang。
+#  # 1.93.0439: 修复各种Google服务。
+#  # 1.92.0437: 修复各种Google服务。
+#  # 1.91.0433: 实验性修复Google Play失败，重新屏蔽。
+#  # 1.90.0432: 实验性修复Google Play，未经测试，很可能无法使用。
+#  # 1.90.0432: 尝试修复Android服务。
+#  # 1.89.0430: 尝试加速Google图床。
+#  # 1.88.0429: 修复Chrome远程桌面。
+#  # 1.87.0424: 修复Dropbox，感谢网友DuckDuckGo。
+#  # 1.87.0424: 修复ProjectH的DNS投毒部分，但ProjectH仍有关键字拦截的问题。
+#  # 1.86.0422: 整理了部分AdBlock。
+#  # 1.85.0421: 尝试稳定OneDrive，感谢网友DuckDuckGo。
+#  # 1.85.0421: 尝试修复谷歌街景，未测试，感谢网友Xiaoyu Tai 。
+#  # 1.85.0421: Google大提速。
+#  # 1.84.0418: 修复Box.com。
+#  # 1.83.0417: 尝试修复OneDrive，但效果不佳。
+#  # 1.82.0416: 新看板娘：香风智乃(Kafuu Chino)。
+#  # 1.81.0415: 修复www.google.com。
+#  # 1.80.0414: 提升可读性。
+#  # 1.80.0414: 尝试修复Google服务。
+#  # 1.79.0408: 修复Dropbox。
+#  # 1.79.0408: 尝试修复Android GooglePlus。
+#  # 1.78.0404: 修复Twitter。
+#  # 1.78.0404: 修复Android服务。
+#  # 1.78.0404: 修复百度。
+#  # 1.77.0392: 修复Gmail图片。
+#  # 1.76.0390: 修复Dropbox。
+#  # 1.75.0389: 修复Dropbox。
+#  # 1.74.0384: 修复Google图片搜索。
+#  # 1.73.0383: 修复Google服务。
+#  # 1.72.0376: 尝试加速Google服务。未经完整测试，有BUG请淡定。
+#  # 1.72.0376: 修复Google Keep。
+#  # 1.71.0374: 修复Google Play。
+#  # 1.70.0373: 修复部分Google服务。
+#  # 1.69.0372: 修复Google Drive客户端。
+#  # 1.68.0371: 修复Google Play。
+#  # 1.67.0370: 修复Google Play。
+#  # 1.66.0369: 修复部分谷歌服务。
+#  # 1.65.0367: 新增GitHub支持。
+#  # 1.65.0367: 修复部分谷歌服务。
+#  # 1.65.0367: 更换谷歌台湾数据中心IP。
+#  # 1.64.0364: 全面启用谷歌新西兰和欧洲数据中心IP。请注意此版本并非稳定版本，未经充分测试，速度较慢，且部分服务仍然受限，仅供恶心功夫网用。
+#  # 1.56.0287: 修复谷歌登录界面。
+#  # 1.55.0286: 尝试修复谷歌服务。
+#  # 1.54.0266: 尝试修复谷歌服务。
+#  # 1.53.0264: 纪念。
+#  # 1.53.0264: 尝试修复谷歌服务。
+#  # 1.52.0194: 尝试稳定谷歌硬盘。
+#  # 1.51.0193: 修复谷歌远程桌面。
+#  # 1.50.0192: 加速维基百科。
+#  # 1.50.0192: 加速各类谷歌服务。
+#  # 1.49.0190: 其它细节修复。
+#  # 1.49.0190: 支持喷嚏网。
+#  # 1.49.0190: 加速Dropbox，感谢Project H论坛网友：for​me。
+#  # 1.49.0190: 尝试提高Youtube兼容性，并未进行测试；这不代表Youtube可以正常访问。
+#  # 1.49.0190: 尝试加速谷歌图床，但说实话效果不佳，详细原因比较复杂此处不表。
+#  # 1.49.0190: 修复Android推送。
+#  # 1.48.0183: 修改格式为Project H友好格式，从此版本起在Project H上同步更新。
+#  # 1.48.0183: 添加并修正Facebook部分域名，但因为条件有限所有功能并未做完整测试。
+#  # 1.48.0183: 屏蔽3DM。
+#  # 1.47.0180: 支持谷歌图书。
+#  # 1.46.0179: 加速谷歌地图Android版。
+#  # 1.45.0178: 修复Gmail联系人和邮件图片。
+#  # 1.44.0176: 加速www.google.com。
+#  # 1.43.0175: 修复Facebook某些图片。
+#  # 1.43.0175: 加速Google Plus、Google Play、环聊等。
+#  # 1.42.0173: 尝试修复Google Drive。
+#  # 1.40.0171: 新看板娘：缪雪儿·佛兰(Myuseru foaran)。
+#  # 1.40.0171: 能用的家伙都使出来了，Google服务的速度和稳定几乎达到了最平衡，方大爷我想歇一会你就成全我吧。
+#  # 1.40.0171: 我一天更新了5个版本你造吗？
+#  # 1.37.0167: 尝试修复Google Drive。
+#  # 1.37.0167: 尝试加速Google Plus。
+#  # 1.36.0165: 尝试加速谷歌账户鉴权。
+#  # 1.35.0164: 尝试加速维基百科。
+#  # 1.34.0163: 默认编码更改为UTF8。
+#  # 1.34.0163: 尝试稳定谷歌服务。
+#  # 1.33.0161: 根据反馈，减少谷歌北京服务器的使用，以尝试稳定谷歌服务。
+#  # 1.32.0158: 新增BN更新加速，用于外服玩家加速更新，默认关闭，如果你不知道这是什么请勿开启。
+#  # 1.32.0158: 尝试稳定环聊。
+#  # 1.31.0157: 新看板娘：夜夜(Yaya)。
+#  # 1.31.0157: 尝试修复环聊WEB版。
+#  # 1.30.0155: 尝试加强Google服务稳定性和速度，大面积启用谷歌台湾及东南亚等地区的数据中心IP。因更新内容较多，尚未完全测试，欢迎大家及时上报BUG。
+#  # 1.29.0148: 加速12306。
+#  # 1.29.0148: 鉴于已经可以通过某些不可靠的方式播放Youtube视频，Youtube条目再次加入，目前可以浏览网页，播放视频仍需搭配其它方案。
+#  # 1.29.0148: 修复一些Google服务。
+#  # 1.29.0148: 再次取消GooglePlay加速，以解决频繁发生的GooglePlay故障。
+#  # 1.28.0145: 解封3DM。
+#  # 1.27.0144: 修复维基百科。
+#  # 1.26.0143: 尝试让云端硬盘和谷歌地图等服务更稳定。
+#  # 1.25.0142: 修复谷歌账户登入用域名。
+#  # 1.25.0142: 紧急修复部分Google域名的403错误。
+#  # 1.23.0139: 修复部分谷歌IP，这次修复时意外发现部分谷歌IP解封了。
+#  # 1.23.0139: 修复PC版和移动版云端硬盘客户端。
+#  # 1.23.0139: 修复Dropbox。
+#  # 1.22.0133: 新看板娘：艾·亚斯汀(Ai Asutin)。
+#  # 1.22.0132: 某些原本就无法正常下载的APP无法从Google Play加速受益，仍需通过VPN等方式进行下载。原因是Google Play下载APP并未使用SSL加密。
+#  # 1.22.0132: 重开Google Play加速，修复了某些原本就无法正常下载的APP在加速后即使挂上VPN也无法下载的BUG。总体速度略低于之前带有BUG的加速模式，但相比未加速前有巨幅提升。
+#  # 1.21.0130: 屏蔽Google Play加速，以解决某些原本就无法正常下载的APP在加速后即使挂上VPN也无法下载的BUG。
+#  # 1.20.0129: 新看板娘提名征集中。
+#  # 1.20.0129: 尝试加速Google Play，未经完整测试，可能会出现无法下载某个APP的情况（即使挂上VPN后），欢迎及时上报BUG。
+#  # 1.20.0129: 推特可用的一个服务器应该是被推特自己关闭了，目前解除了对推特的支持，等待新IP出现。
+#  # 1.20.0129: 修复了屏蔽淘宝广告同时也屏蔽了正常链接的问题。
+#  # 1.19.0126: 解除淘宝客广告链接的封锁，因为封锁淘宝客会造成一淘返利链接失效。
+#  # 1.18.0125: 针对Android平台作出大量修复，受到增益的APP包括但不限于：Facebook、Twitter和GMS。
+#  # 1.17.121: 修复Google Map。
+#  # 1.16.120: 修复了一个可能造成GooglePlus Android不正常的BUG。
+#  # 1.15.119: 新增封锁了大量广告（被一个布满了广告的页面坑了五六兆流量，怀恨在心）（未进行完全测试，请大家及时上报BUG）。
+#  # 1.15.119: 微调了部分谷歌服务IP。
+#  # 1.14.116: 修复inoreader。
+#  # 1.13.115: Twitter Web版（含移动Web）解封，移动客户端尝试解封（尚未测试），感谢Smarthosts。Facebook移动客户端确认稳定运行。
+#  # 1.12.114: 尝试继续完善Facebook。
+#  # 1.11.112: Facebook部分解封，但仍有部分功能无法在墙内使用，例如上传图片。Twitter暂时解封不能。
+#  # 1.10.110: 新看板娘：时崎狂三(Tokisaki Kurumi)。
+#  # 1.10.110: 其它少量BUG修复。
+#  # 1.10.110: 修复谷歌部分服务器证书问题。
+#  # 1.10.110: 大部分常用非敏感谷歌服务全面启用谷歌北京数据中心，速度巨幅提升，谷歌地图可实现路线秒搜。
+#  # 1.06.106: 维基百科全面解封；启用荷兰服务器，速度较慢，但很稳定。
+#  # 1.05.104: 修复Flickr。
+#  # 1.04.103: 修复Twitter和GoogleUser的一些BUG。
+#  # 1.03.102: 修复chromium.org。
+#  # 1.03.101: 版本号重新设计，以方便版本管理。
+#  # 1.03.101: Twitter回归。
+#  # 1.2.5: 修复Facebook。
+#  # 1.2.4: 重启Android加速失败，版本退回。
+#  # 1.2.3: 尝试重启Android加速。
+#  # 1.2.1: 修复Play商店中APP预览图无法显示的问题，原因是证书与服务器不符。
+#  # 1.2.0: 四糸乃我爱你啊（prpr
+#  # 1.1.5: 对了，该换看板娘了。
+#  # 1.1.5: 因为GFW长时间没更新，所以我对GFW发出了深深的鄙视，并在没有做任何实质性修改的情况下对imouto.host的版本号进行了更新。
+#  # 1.1.3: 谷歌地图 For Android位置设置偶尔不可用，原因未知。
+#  # 1.1.3: 暂时屏蔽Wikipedia。
+#  # 1.1.2: 修复Facebook移动版。
+#  # 1.1.1: 维护者博客搬家，加入维护者博客IP相关地址。
+#  # 1.1.1: 继续修复WordPress.com。
+#  # 1.1.0: 新增WordPress.com支持。
+#  # 1.0.9: 修复Facebook上传。
+#  # 1.0.8: 修复Dropbox。
+#  # 1.0.7: 庆祝苹果在中国大陆部署CDN，苹果相关Host条目全部删除，Host本体大精简！
+#  # 1.0.6: 修复Facebook头像。
+#  # 1.0.5: 修复Ingress，添加若干Google域名。
+#  # 1.0.4: 修复Ingress。
+#  # 1.0.3: 切换谷歌数据中心IP为新加坡数据中心，修复中国华北地区谷歌服务缓慢问题。
+#  # 1.0.2: 加速GoogleMap For Android。
+#  # 1.0.1: 修复GTalk For Android。
+#  # 1.0.0: 我是幼驯染党。
+#  # 1.0.0: 切换谷歌数据中心IP为马来西亚吉隆坡数据中心，谷歌服务速度巨幅提升。
+#  # 1.0.0: 添加若干谷歌域名。
+#  # 1.0.0: 修复Facebook Web版。
+#  # 0.9.9: 添加了一个云端硬盘域名。
+#  # 0.9.8: BUG修复。
+#  # 0.9.7: BUG修复，Facebook Web版速度略微提升。
+#  # 0.9.6: 加速www.google.com。
+#  # 0.9.5: BUG修复。
+#  # 0.9.4: 加速Chrome翻译Api。
+#  # 0.9.4: 加速谷歌地图Api，Ingress Intel Map稳定性大幅提升。
+#  # 0.9.2: 支援Ingress。
+#  # 0.9.1: 修复www.google.com。
+#  # 0.9.0: Facebook加速。
+#  # 0.8.9: 谷歌图片服务器稳定性加强。
+#  # 0.8.8: Filpboard内Google+修复。
+#  # 0.8.7: BUG修复。
+#  # 0.8.6: BUG修复。
+#  # 0.8.5: 大幅提升host文件可读性。
+#  # 0.8.5: 云端硬盘 for Android复活！
+#  # 0.8.5: gReader故障修复。
+#  # 0.8.5: Filpboard内Google+图片无法显示，原因未知。
+#  # 0.8.3: 大量BUG修复。
+#  # 0.8.2: 大量BUG修复。
+#  # 0.8.1: 大量BUG修复。
+#  # 0.8.0: Android各项Google服务仍然不稳定，云端硬盘客户端由于未知的原因甚至翻墙后亦无法使用。
+#  # 0.8.0: Android各项Google服务请尝试使用Web客户端或第三方客户端，如ES文件浏览器和钛备份内置云端硬盘同步功能均正常。
+#  # 0.8.0: 添加Facebook APPs域名，解封Facebook游戏。
+#  # 0.8.0: Facebook for Android 2.X版客户端仍不稳定，请尝试使用1.X版客户端或Web版客户端。
+#
+#  #看板娘 :
+#  # 2.16.0481: 朝田诗乃(Asata Shino)，《刀剑神域》
+#  # 2.02.0446: 佐仓千代(Sakura Chiyo)，《月刊少女野崎君》
+#  # 1.82.0416: 香风智乃(Kafuu Chino)，《请问您今天要来点兔子吗？》
+#  # 1.40.0171: 缪雪儿·佛兰(Myuseru foaran)，《萌萌侵略者》
+#  # 1.31.0157: 夜夜(Yaya)，《机巧少女不会受伤》
+#  # 1.22.0133: 艾·亚斯汀(Ai Asutin)，《神不在的星期天》
+#  # 1.10.110: 时崎狂三(Tokisaki Kurumi)，《DATE·A·LIVE》
+#  # 1.2.0: 四糸乃(Yoshino)，《DATE·A·LIVE》
+#  # 1.0.0: 春咲千和(Harusaki Chiwa)，《我女友与青梅竹马的惨烈修罗场》
+#  # 0.8.0: 小鸟游六花(Takanashi Rikka)，《中二病也要谈恋爱！》
+#
+#  #捐助者 :
+#  #每个星号代表1字节，括号内金额为扣除手续费后的实际到账金额。
+#  #若捐助者提出要求，我可以在这里完整或部分显示捐助者信息，但请捐助者注意身份泄露问题。
+#  #imouto.host捐助用PayPal收款账户：moe@love.com
+#  # 2014.06.29: 张**，************@gmail.com，USD 5.00 (4.50)
+#  # 2014.06.30: 陈**，********@gmail.com，USD 2.00 (1.62)
+#  # 2014.07.02: 毛****，**********@***.com，USD 10.00 (9.31)
+#  # 2014.07.14: ******* Chen，*******5@**.com，USD 20.00 (18.92)
+#  # 2014.07.14: Zhang *********，****@*****.co.jp，USD 2.33 (1.94)
+#  # 2014.08.06: GONG ******，g******@***********.net，USD 30.00 (28.53)
+#  # 2014.08.13: Hu ********，*************@gmail.com，USD 15.00 (14.11)
+#  # 2014.08.27: 刘****，*********@*******.org，USD 25.00 (23.72)
+#
+#  数据来源于互联网上的无名英雄们
+#  捐助来自于互联网自由的支持者们
+#  感谢他们！
+#
+#######################################################################
+#+MESSAGE_END
 
 #localhost START
 127.0.0.1 localhost
 ::1 localhost
 #localhost END
+
+#AdBlock START
+127.0.0.1 1.allyes.com.cn
+127.0.0.1 86file.megajoy.com
+127.0.0.1 86get.joy.cn
+127.0.0.1 86log.joy.cn
+127.0.0.1 Fvid.atm.youku.com
+127.0.0.1 a-ads.com
+127.0.0.1 a.admob.com
+127.0.0.1 a.baidu.com
+127.0.0.1 a.cctv.com
+127.0.0.1 a.cntv.cn
+127.0.0.1 ac.atpanel.com
+127.0.0.1 acs.56.com
+127.0.0.1 acs.agent.56.com
+127.0.0.1 acs.agent.v-56.com
+127.0.0.1 ad-411.com
+127.0.0.1 ad-apac.doubleclick.net
+127.0.0.1 ad-apac.doubleclick.net
+127.0.0.1 ad-balancer.net
+127.0.0.1 ad-clicks.com
+127.0.0.1 ad-delivery.net
+127.0.0.1 ad-emea.doubleclick.net
+127.0.0.1 ad-emea.doubleclick.net
+127.0.0.1 ad-feeds.com
+127.0.0.1 ad-flow.com
+127.0.0.1 ad-g.doubleclick.net
+127.0.0.1 ad-gbn.com
+127.0.0.1 ad-indicator.com
+127.0.0.1 ad-plus.cn
+127.0.0.1 ad-server.co.za
+127.0.0.1 ad-serverparc.nl
+127.0.0.1 ad-sponsor.com
+127.0.0.1 ad-srv.net
+127.0.0.1 ad-u.com
+127.0.0.1 ad-vice.biz
+127.0.0.1 ad-yt-bfp.doubleclick.net
+127.0.0.1 ad.103092804.com
+127.0.0.1 ad.23blogs.com
+127.0.0.1 ad.3ad.doubleclick.net
+127.0.0.1 ad.3au.doubleclick.net
+127.0.0.1 ad.71i.de
+127.0.0.1 ad.accessmediaproductions.com
+127.0.0.1 ad.adlantis.jp
+127.0.0.1 ad.adorika.com
+127.0.0.1 ad.adserve.com
+127.0.0.1 ad.adx.doubleclick.net
+127.0.0.1 ad.ae.doubleclick.net
+127.0.0.1 ad.afy11.net
+127.0.0.1 ad.agilemedia.jp
+127.0.0.1 ad.airad.com
+127.0.0.1 ad.allyes.cn
+127.0.0.1 ad.aquamediadirect.com
+127.0.0.1 ad.ar.doubleclick.net
+127.0.0.1 ad.at.doubleclick.net
+127.0.0.1 ad.au.doubleclick.net
+127.0.0.1 ad.axyzconductor.jp
+127.0.0.1 ad.be.doubleclick.net
+127.0.0.1 ad.bg.doubleclick.net
+127.0.0.1 ad.br.doubleclick.net
+127.0.0.1 ad.brainer.jp
+127.0.0.1 ad.ca.doubleclick.net
+127.0.0.1 ad.cctv.com
+127.0.0.1 ad.ch.doubleclick.net
+127.0.0.1 ad.cibleclick.com
+127.0.0.1 ad.cl.doubleclick.net
+127.0.0.1 ad.cn.doubleclick.net
+127.0.0.1 ad.cooks.com
+127.0.0.1 ad.de.doubleclick.net
+127.0.0.1 ad.dic.nicovideo.jp
+127.0.0.1 ad.directmirror.com
+127.0.0.1 ad.dk.doubleclick.net
+127.0.0.1 ad.doubleclick.com
+127.0.0.1 ad.doubleclick.net
+127.0.0.1 ad.download..net
+127.0.0.1 ad.duga.jp
+127.0.0.1 ad.e-kolay.net
+127.0.0.1 ad.eporner.com
+127.0.0.1 ad.es.doubleclick.net
+127.0.0.1 ad.favod.net
+127.0.0.1 ad.fi.doubleclick.net
+127.0.0.1 ad.floq.jp
+127.0.0.1 ad.flux.com
+127.0.0.1 ad.fnnews.com
+127.0.0.1 ad.fo.net
+127.0.0.1 ad.fout.jp
+127.0.0.1 ad.fr.doubleclick.net
+127.0.0.1 ad.ghfusion.com
+127.0.0.1 ad.gr.doubleclick.net
+127.0.0.1 ad.hk.doubleclick.net
+127.0.0.1 ad.hr.doubleclick.net
+127.0.0.1 ad.hu.doubleclick.net
+127.0.0.1 ad.icasthq.com
+127.0.0.1 ad.ie.doubleclick.net
+127.0.0.1 ad.iloveinterracial.com
+127.0.0.1 ad.imad.co.kr
+127.0.0.1 ad.impressbm.co.jp
+127.0.0.1 ad.in.doubleclick.net
+127.0.0.1 ad.indomp3z.us
+127.0.0.1 ad.it.doubleclick.net
+127.0.0.1 ad.jamba.net
+127.0.0.1 ad.jamster.com
+127.0.0.1 ad.jokeroo.com
+127.0.0.1 ad.jp.ap.valu.com
+127.0.0.1 ad.jp.doubleclick.net
+127.0.0.1 ad.kau.li
+127.0.0.1 ad.kr.doubleclick.net
+127.0.0.1 ad.land.to
+127.0.0.1 ad.leadbolt.net
+127.0.0.1 ad.lijit.com
+127.0.0.1 ad.linkstorms.com
+127.0.0.1 ad.livere.co.kr
+127.0.0.1 ad.lyricswire.com
+127.0.0.1 ad.mainichi.jp
+127.0.0.1 ad.maist.jp
+127.0.0.1 ad.mangareader.net
+127.0.0.1 ad.mo.doubleclick.net
+127.0.0.1 ad.mo.doubleclick.net
+127.0.0.1 ad.mygamesol.com
+127.0.0.1 ad.n2434.doubleclick.net
+127.0.0.1 ad.ne.com
+127.0.0.1 ad.net
+127.0.0.1 ad.nicovideo.jp
+127.0.0.1 ad.nl.doubleclick.net
+127.0.0.1 ad.no.doubleclick.net
+127.0.0.1 ad.nz.doubleclick.net
+127.0.0.1 ad.oret.jp
+127.0.0.1 ad.ourgame.com
+127.0.0.1 ad.pandora.tv
+127.0.0.1 ad.pickple.net
+127.0.0.1 ad.pl.doubleclick.net
+127.0.0.1 ad.premiumonlinemedia.com
+127.0.0.1 ad.proxy.sh
+127.0.0.1 ad.pt.doubleclick.net
+127.0.0.1 ad.qq.com
+127.0.0.1 ad.qwapi.com
+127.0.0.1 ad.qyer.com
+127.0.0.1 ad.rambler.ru
+127.0.0.1 ad.realmcdn.net
+127.0.0.1 ad.response.jp
+127.0.0.1 ad.ro.doubleclick.net
+127.0.0.1 ad.rs.doubleclick.net
+127.0.0.1 ad.ru.doubleclick.net
+127.0.0.1 ad.se.doubleclick.net
+127.0.0.1 ad.search.ch
+127.0.0.1 ad.searchina.ne.jp
+127.0.0.1 ad.sensismediasmart.com
+127.0.0.1 ad.sg.doubleclick.net
+127.0.0.1 ad.sharethis.com
+127.0.0.1 ad.si.doubleclick.net
+127.0.0.1 ad.slutload.com
+127.0.0.1 ad.smartclip.net
+127.0.0.1 ad.spielothek.so
+127.0.0.1 ad.sponsoreo.com
+127.0.0.1 ad.terra.doubleclick.net
+127.0.0.1 ad.th.doubleclick.net
+127.0.0.1 ad.thisav.com
+127.0.0.1 ad.traffmonster.info
+127.0.0.1 ad.turn.com
+127.0.0.1 ad.tw.doubleclick.net
+127.0.0.1 ad.uk.doubleclick.net
+127.0.0.1 ad.us.doubleclick.net
+127.0.0.1 ad.userporn.com
+127.0.0.1 ad.userporn.com
+127.0.0.1 ad.valuecalling.com
+127.0.0.1 ad.vidaroo.com
+127.0.0.1 ad.vippers.jp
+127.0.0.1 ad.watch.impress.co.jp
+127.0.0.1 ad.where.com
+127.0.0.1 ad.wiredvision.jp
+127.0.0.1 ad.wsod.com
+127.0.0.1 ad.za.doubleclick.net
+127.0.0.1 ad.zaman.com
+127.0.0.1 ad.zanox.com
+127.0.0.1 ad001.ru
+127.0.0.1 ad1.nownews.com
+127.0.0.1 ad2.doubleclick.net
+127.0.0.1 ad2.zophar.net
+127.0.0.1 ad20.net
+127.0.0.1 ad2games.com
+127.0.0.1 ad3.eu
+127.0.0.1 ad3.l3go.com
+127.0.0.1 ad4.liverail.com
+127.0.0.1 ad4game.com
+127.0.0.1 ad4partners.com
+127.0.0.1 ad6media.fr
+127.0.0.1 adaos-ads.net
+127.0.0.1 adapd.com
+127.0.0.1 adb.fling.com
+127.0.0.1 adclick.g.doubleclick.net
+127.0.0.1 adcontrol.tudou.com
+127.0.0.1 ade.wooboo.com.cn
+127.0.0.1 adextensioncontrol.tudou.com
+127.0.0.1 adguanggao.eee114.com
+127.0.0.1 adguanggao.eee114.com
+127.0.0.1 adm.265g.com
+127.0.0.1 adm.baidu.com
+127.0.0.1 adm.funshion.com
+127.0.0.1 adm.fwmrm.net
+127.0.0.1 adm.shinobi.jp
+127.0.0.1 adm.xmfish.com
+127.0.0.1 adman.gr
+127.0.0.1 adman.se
+127.0.0.1 admanage.com
+127.0.0.1 admatch-syndication.mochila.com
+127.0.0.1 admd.yam.com
+127.0.0.1 admedia.com
+127.0.0.1 admedia.wsod.com
+127.0.0.1 admedias.net
+127.0.0.1 admeta.vo.llnwd.net
+127.0.0.1 admez.com
+127.0.0.1 adping.qq.com
+127.0.0.1 adplay.tudou.com
+127.0.0.1 ads-rolandgarros.com
+127.0.0.1 ads-stats.com
+127.0.0.1 ads.adap.tv
+127.0.0.1 ads.adultswim.com
+127.0.0.1 ads.ahds.ac.uk
+127.0.0.1 ads.avazu.net
+127.0.0.1 ads.b10f.jp
+127.0.0.1 ads.belointeractive.com
+127.0.0.1 ads.bizx.info
+127.0.0.1 ads.bridgetrack.com
+127.0.0.1 ads.cc-dt.com
+127.0.0.1 ads.cnn.com
+127.0.0.1 ads.contentabc.com
+127.0.0.1 ads.cvut.cz
+127.0.0.1 ads.e-planning.net
+127.0.0.1 ads.expedia.com
+127.0.0.1 ads.forbes.com
+127.0.0.1 ads.fox.com
+127.0.0.1 ads.foxnews.com
+127.0.0.1 ads.fuckingmachines.com
+127.0.0.1 ads.gamelink.com
+127.0.0.1 ads.globo.com
+127.0.0.1 ads.golfweek.com
+127.0.0.1 ads.hosting.vcmedia.vn
+127.0.0.1 ads.id-t.com
+127.0.0.1 ads.indeed.com
+127.0.0.1 ads.intergi.com
+127.0.0.1 ads.jetpackdigital.com
+127.0.0.1 ads.jlisting.jp
+127.0.0.1 ads.lmmob.com
+127.0.0.1 ads.lzjl.com
+127.0.0.1 ads.mefeedia.com
+127.0.0.1 ads.meropar.jp
+127.0.0.1 ads.metropolis.co.jp
+127.0.0.1 ads.mixi.jp
+127.0.0.1 ads.morningstar.com
+127.0.0.1 ads.mp.mydas.mobi
+127.0.0.1 ads.mycricket.com
+127.0.0.1 ads.nicovideo.jp
+127.0.0.1 ads.nyootv.com
+127.0.0.1 ads.ookla.com
+127.0.0.1 ads.pandora.tv.net
+127.0.0.1 ads.peteava.ro
+127.0.0.1 ads.pof.com
+127.0.0.1 ads.pointroll.com
+127.0.0.1 ads.postimees.ee
+127.0.0.1 ads.scott-sports.com
+127.0.0.1 ads.scottusa.com
+127.0.0.1 ads.seriouswheels.com
+127.0.0.1 ads.sexier.com
+127.0.0.1 ads.smowtion.com
+127.0.0.1 ads.socialtheater.com
+127.0.0.1 ads.songs.pk
+127.0.0.1 ads.spilgames.com
+127.0.0.1 ads.stoiximan.gr
+127.0.0.1 ads.sumotorrent.com
+127.0.0.1 ads.tbs.com
+127.0.0.1 ads.telecinco.es
+127.0.0.1 ads.tracfonewireless.com
+127.0.0.1 ads.trackitdown.net
+127.0.0.1 ads.trutv.com
+127.0.0.1 ads.ultimatesurrender.com
+127.0.0.1 ads.undertone.com
+127.0.0.1 ads.us.e-planning.net
+127.0.0.1 ads.waps.cn
+127.0.0.1 ads.wapx.cn
+127.0.0.1 ads.worldstarhiphop.com
+127.0.0.1 ads.xxxbunker.com
+127.0.0.1 ads.yimg.com
+127.0.0.1 ads.zynga.com
+127.0.0.1 ads01.com
+127.0.0.1 ads1.msads.net
+127.0.0.1 ads1.msn.com
+127.0.0.1 ads2ads.net
+127.0.0.1 ads2srv.com
+127.0.0.1 ads4cheap.com
+127.0.0.1 ads80.com
+127.0.0.1 adsclick.qq.com
+127.0.0.1 adsfile.qq.com
+127.0.0.1 adsgroup.qq.com
+127.0.0.1 adshmct.qq.com
+127.0.0.1 adshmmsg.qq.com
+127.0.0.1 adslvfile.qq.com
+127.0.0.1 adslvseed.qq.com
+127.0.0.1 adsqqclick.qq.com
+127.0.0.1 adsrich.qq.com
+127.0.0.1 adstextview.qq.com
+127.0.0.1 adsview.qq.com
+127.0.0.1 adsview2.qq.com
+127.0.0.1 adver.pengyou.com
+127.0.0.1 advstat.xunlei.com
+127.0.0.1 adx.g.doubleclick.net
+127.0.0.1 affiliate.2mdn.net
+127.0.0.1 afp.qiyi.com
+127.0.0.1 amn.doubleclick.net
+127.0.0.1 analytics.admob.com
+127.0.0.1 analytics.ku6.com
+127.0.0.1 aos.gw.youmi.net
+127.0.0.1 api.admob.com
+127.0.0.1 api.admob.com
+127.0.0.1 api.airpush.com
+127.0.0.1 apps5.oingo.com
+127.0.0.1 appsrv1.madserving.cn
+127.0.0.1 ashow.pcpop.com
+127.0.0.1 at-img1.tdimg.com
+127.0.0.1 at-img2.tdimg.com
+127.0.0.1 at-img3.tdimg.com
+127.0.0.1 atm.youku.com
+127.0.0.1 b.admob.com
+127.0.0.1 baidutv.baidu.com
+127.0.0.1 banlv.baidu.com
+127.0.0.1 bar.baidu.com
+127.0.0.1 bill.agent.56.com
+127.0.0.1 bill.agent.v-56.com
+127.0.0.1 biz5.sandai.net
+127.0.0.1 bm.alimama.cn
+127.0.0.1 bmvip.alimama.cn
+127.0.0.1 c.admob.com
+127.0.0.1 c.baidu.com
+127.0.0.1 c.l.qq.com
+127.0.0.1 c2.l.qq.com
+127.0.0.1 cache.adm.cnzz.net
+127.0.0.1 casting.openv.com
+127.0.0.1 cb.alimama.cn
+127.0.0.1 cb.baidu.com
+127.0.0.1 cc-dt.com
+127.0.0.1 cctv.adsunion.com
+127.0.0.1 cctv.adsunion.com
+127.0.0.1 cfg.adsmogo.com
+127.0.0.1 cjhq.baidu.com
+127.0.0.1 click.am1.adm.cnzz.net
+127.0.0.1 clickserve.cc-dt.com
+127.0.0.1 clickserve.dartsearch.net
+127.0.0.1 clickserve.eu.dartsearch.net
+127.0.0.1 clickserve.uk.dartsearch.net
+127.0.0.1 clickserve.us2.dartsearch.net
+127.0.0.1 cm.g.doubleclick.net
+127.0.0.1 cmweb.ilike.alibaba.com
+127.0.0.1 cn.ad.adon.vpon.com
+127.0.0.1 cn.img.adon.vpon.com
+127.0.0.1 cpm.admob.com
+127.0.0.1 cpm2.admob.com
+127.0.0.1 cpro.baidu.com
+127.0.0.1 creative.cc-dt.com
+127.0.0.1 creatives.doubleclick.net
+127.0.0.1 d.admob.com
+127.0.0.1 d.cntv.cn
+127.0.0.1 d.wiyun.com
+127.0.0.1 dart-apac.l.doubleclick.net
+127.0.0.1 dcads.sina.com.cn
+127.0.0.1 dfp.doubleclick.net
+127.0.0.1 doubleclick.com
+127.0.0.1 doubleclick.de
+127.0.0.1 doubleclick.ne.jp
+127.0.0.1 doubleclick.net
+127.0.0.1 doubleclick.shockwave.com
+127.0.0.1 dr.soso.com
+127.0.0.1 drmcmm.baidu.com
+127.0.0.1 dzl.baidu.com
+127.0.0.1 e.admob.com
+127.0.0.1 e.baidu.com
+127.0.0.1 ebaycn.doubleclick.net
+127.0.0.1 ebaytw.doubleclick.net
+127.0.0.1 eiv.baidu.com
+127.0.0.1 f.admob.com
+127.0.0.1 f.qstatic.com
+127.0.0.1 feedads.g.doubleclick.net
+127.0.0.1 fls.doubleclick.net
+127.0.0.1 fls.uk.doubleclick.net
+127.0.0.1 focusbaiduafp.allyes.com
+127.0.0.1 focusbaiduafp.allyes.com
+127.0.0.1 fodder.qq.com
+127.0.0.1 fodder.tc.qq.com
+127.0.0.1 fw.qq.com
+127.0.0.1 g.admob.com
+127.0.0.1 gan.doubleclick.net
+127.0.0.1 gdfp.g.doubleclick.net
+127.0.0.1 ge-0-0-1-edge1.sc9.admob.com
+127.0.0.1 ge-0-0-43-crs1.sc9.admob.com
+127.0.0.1 gimg.baidu.com
+127.0.0.1 googleads.g.doubleclick.net
+127.0.0.1 guanjia.baidu.com
+127.0.0.1 gug.ku6cdn.com
+127.0.0.1 gw.youmi.net
+127.0.0.1 h.admob.com
+127.0.0.1 hc.baidu.com
+127.0.0.1 hermes.airad.com
+127.0.0.1 hm.baidu.com
+127.0.0.1 hm.l.qq.com
+127.0.0.1 html.atm.youku.com
+127.0.0.1 httpring.qq.com
+127.0.0.1 hz.mmstat.com
+127.0.0.1 i.admob.com
+127.0.0.1 iebar.baidu.com
+127.0.0.1 ikcode.baidu.com
+127.0.0.1 images.sohu.com
+127.0.0.1 imc.l.qq.com
+127.0.0.1 imp.adsmogo.com
+127.0.0.1 iwstat.tudou.com
+127.0.0.1 j.admob.com
+127.0.0.1 jingjia.qq.com
+127.0.0.1 jzclick.soso.com
+127.0.0.1 k.admob.com
+127.0.0.1 ku6.allyes.com
+127.0.0.1 ku6afp.allyes.com
+127.0.0.1 l.admob.com
+127.0.0.1 l.qq.com
+127.0.0.1 l2.l.qq.com
+127.0.0.1 ln.doubleclick.net
+127.0.0.1 lstat.youku.com
+127.0.0.1 m.admob.com
+127.0.0.1 m.de.2mdn.net
+127.0.0.1 m.doubleclick.net
+127.0.0.1 m.fr.2mdn.net
+127.0.0.1 m.openv.tv
+127.0.0.1 m.uk.2mdn.net
+127.0.0.1 m.us.doubleclick.net
+127.0.0.1 m1.2mdn.net
+127.0.0.1 m1.au.2mdn.net
+127.0.0.1 m1.doubleclick.net
+127.0.0.1 m1.emea.2mdn.net
+127.0.0.1 m2.doubleclick.net
+127.0.0.1 m3.2mdn.net
+127.0.0.1 ma.baidu.com
+127.0.0.1 ma.baidu.com
+127.0.0.1 mangler1.generals.ea.com
+127.0.0.1 mangler10.generals.ea.com
+127.0.0.1 mangler2.generals.ea.com
+127.0.0.1 mangler3.generals.ea.com
+127.0.0.1 mangler4.generals.ea.com
+127.0.0.1 mangler5.generals.ea.com
+127.0.0.1 mangler6.generals.ea.com
+127.0.0.1 mangler7.generals.ea.com
+127.0.0.1 mangler8.generals.ea.com
+127.0.0.1 mangler9.generals.ea.com
+127.0.0.1 mcfg.sandai.net
+127.0.0.1 media.admob.com
+127.0.0.1 mm.admob.com
+127.0.0.1 mm.admob.com
+127.0.0.1 mm1.vip.sc1.admob.com
+127.0.0.1 mmv.admob.com
+127.0.0.1 motifcdn.doubleclick.net
+127.0.0.1 motifcdn2.doubleclick.net
+127.0.0.1 mpv.sandai.net
+127.0.0.1 n.admob.com
+127.0.0.1 n3285ad.doubleclick.net
+127.0.0.1 n3349ad.doubleclick.net
+127.0.0.1 n339.asp-cc.com
+127.0.0.1 n4052ad.doubleclick.net
+127.0.0.1 n4061ad.doubleclick.net
+127.0.0.1 n4061ad.fr.doubleclick.net
+127.0.0.1 n4061ad.hk.doubleclick.net
+127.0.0.1 n4403ad.doubleclick.net
+127.0.0.1 n479ad.doubleclick.net
+127.0.0.1 n609ad.doubleclick.net
+127.0.0.1 neirong.baidu.com
+127.0.0.1 nsclick.baidu.com
+127.0.0.1 nsclick.baidu.com
+127.0.0.1 nstat.tudou.com
+127.0.0.1 o.admob.com
+127.0.0.1 oimsgad.qq.com
+127.0.0.1 optimize.doubleclick.net
+127.0.0.1 optout.doubleclick.net
+127.0.0.1 p.admob.com
+127.0.0.1 p.l.qq.com
+127.0.0.1 p2.l.qq.com
+127.0.0.1 p3p.alibaba.com
+127.0.0.1 p3p.mmstat.com
+127.0.0.1 p4psearch.china.alibaba.com
+127.0.0.1 pagespeed.report.qq.com
+127.0.0.1 paix1.sc1.admob.com
+127.0.0.1 pic.casee.cn
+127.0.0.1 pingfore.qq.com
+127.0.0.1 pingfore.soso.com
+127.0.0.1 pole.6rooms.com
+127.0.0.1 pos.baidu.com
+127.0.0.1 pp2.pptv.com
+127.0.0.1 pq.stat.ku6.com
+127.0.0.1 pro.letv.com
+127.0.0.1 q.admob.com
+127.0.0.1 qqlogo.qq.com
+127.0.0.1 qring-tms.qq.com
+127.0.0.1 qss-client.qq.com
+127.0.0.1 r.admob.com
+127.0.0.1 r.admob.com
+127.0.0.1 r.domob.cn
+127.0.0.1 r2.adwo.com
+127.0.0.1 rad.live.com
+127.0.0.1 rad.msn.com
+127.0.0.1 rd.intl.doubleclick.net
+127.0.0.1 req.adsmogo.com
+127.0.0.1 rh.qq.com
+127.0.0.1 rich.qq.com
+127.0.0.1 rmcdn.2mdn.net
+127.0.0.1 rmcdn.f.2mdn.net
+127.0.0.1 rs1.qq.com
+127.0.0.1 rs2.qq.com
+127.0.0.1 s.admob.com
+127.0.0.1 s.baidu.com
+127.0.0.1 s.domob.cn
+127.0.0.1 s1.2mdn.net
+127.0.0.1 s2.video.doubleclick.net
+127.0.0.1 sc1.admob.com
+127.0.0.1 sc9.admob.com
+127.0.0.1 scdown.qq.com
+127.0.0.1 se1.doubleclick.net
+127.0.0.1 securepubads.g.doubleclick.net
+127.0.0.1 server1.adpolestar.net
+127.0.0.1 service.urchin.com
+127.0.0.1 servserv.generals.ea.com
+127.0.0.1 show-msgch.qq.com
+127.0.0.1 shrek.6.cn
+127.0.0.1 simba.6.cn
+127.0.0.1 sobar.baidu.com
+127.0.0.1 sobartop.baidu.com
+127.0.0.1 spcode.baidu.com
+127.0.0.1 spcode.baidu.com
+127.0.0.1 speed.lstat.youku.com
+127.0.0.1 st.vq.ku6.cn
+127.0.0.1 stat.56.com
+127.0.0.1 stat.gw.youmi.net
+127.0.0.1 stat.tudou.com
+127.0.0.1 stat.youku.com
+127.0.0.1 stat0.888.ku6.com
+127.0.0.1 stat1.888.ku6.com
+127.0.0.1 stat2.888.ku6.com
+127.0.0.1 stat2.corp.56.com
+127.0.0.1 stat3.888.ku6.com
+127.0.0.1 static.adwo.com
+127.0.0.1 static.ku6.com
+127.0.0.1 static.lstat.youku.com
+127.0.0.1 static.mediav.com
+127.0.0.1 static.wooboo.com.cn
+127.0.0.1 static.youmi.net
+127.0.0.1 stats.tudou.com
+127.0.0.1 survey.china.alibaba.com
+127.0.0.1 t.admob.com
+127.0.0.1 t.atpanel.com
+127.0.0.1 taobaoafp.allyes.cn
+127.0.0.1 taobaoafp.allyes.com
+127.0.0.1 tcss.qq.com
+127.0.0.1 tk.baidu.com
+127.0.0.1 tk.baidu.com
+127.0.0.1 tkweb.baidu.com
+127.0.0.1 tongji.baidu.com
+127.0.0.1 toolbar.baidu.com
+127.0.0.1 toolbar.soso.com
+127.0.0.1 trace.qq.com
+127.0.0.1 tracker.baidu.com
+127.0.0.1 u.admob.com
+127.0.0.1 ubmcmm.baidustatic.com
+127.0.0.1 ucstat.baidu.com
+127.0.0.1 ucstat.baidu.com
+127.0.0.1 ulic.baidu.com
+127.0.0.1 uniclick.openv.com
+127.0.0.1 union.56.com
+127.0.0.1 union.6.cn
+127.0.0.1 union.baidu.com
+127.0.0.1 union.baidu.com
+127.0.0.1 unstat.baidu.com
+127.0.0.1 urchin.lstat.youku.com
+127.0.0.1 utility.baidu.com
+127.0.0.1 utility.baidu.com
+127.0.0.1 utk.baidu.com
+127.0.0.1 utk.baidu.com
+127.0.0.1 uvimage.56.com
+127.0.0.1 v.admob.com
+127.0.0.1 v0.stat.ku6.com
+127.0.0.1 v1.stat.ku6.com
+127.0.0.1 v16.56.com
+127.0.0.1 v2.stat.ku6.com
+127.0.0.1 v3.stat.ku6.com
+127.0.0.1 v3.toolbar.soso.com
+127.0.0.1 valb.atm.youku.com
+127.0.0.1 valc.atm.youku.com
+127.0.0.1 valf.atm.youku.com
+127.0.0.1 valo.atm.youku.com
+127.0.0.1 valp.atm.youku.com
+127.0.0.1 vid.atm.youku.com
+127.0.0.1 w.admob.com
+127.0.0.1 w.l.qq.com
+127.0.0.1 walp.atm.youku.com
+127.0.0.1 wangmeng.baidu.com
+127.0.0.1 wap.casee.cn
+127.0.0.1 wm.baidu.com
+127.0.0.1 www.adview.cn
+127.0.0.1 www.appliedsemantics.com
+127.0.0.1 www.atpanel.com
+127.0.0.1 www.destinationurl.com
+127.0.0.1 www.tao123.com
+127.0.0.1 www1.vip.sc9.admob.com
+127.0.0.1 www3.webhostingtalk.com
+127.0.0.1 x.admob.com
+127.0.0.1 y.admob.com
+127.0.0.1 z.admob.com
+127.0.0.1 ads.mopub.com
+127.0.0.1 dock.inmobi.com
+127.0.0.1 e-ltvp.inmobi.com
+127.0.0.1 i.w.inmobi.com
+127.0.0.1 f1.p0y.com
+127.0.0.1 f2.p0y.com
+127.0.0.1 f3.p0y.com
+127.0.0.1 f4.p0y.com
+127.0.0.1 file.ipinyou.com.cn
+127.0.0.1 stats.ipinyou.com
+#AdBlock END
 
 #ccFox.info START
 66.155.11.238 ccfox.info
@@ -113,7 +1011,7 @@
 162.159.252.5 www.feedly.com
 162.159.252.5 feedly.com
 74.125.204.121  s3.feedly.com
-64.233.166.141  feedly-beta.appspot.com
+64.233.167.141  feedly-beta.appspot.com
 #feedly END
 
 #FlipBoard START
@@ -312,9 +1210,9 @@
 #Flickr END
 
 #DuckDuckGo START
-46.51.216.187 duckduckgo.com
-46.51.216.187 www.duckduckgo.com
-46.51.216.187 search.duckduckgo.com
+46.51.216.186 duckduckgo.com
+46.51.216.186 www.duckduckgo.com
+#46.51.216.186  search.duckduckgo.com
 46.51.197.89  ac.duckduckgo.com
 46.51.218.82  icons.duckduckgo.com
 46.51.218.82  images.duckduckgo.com
@@ -378,22 +1276,22 @@
 
 #Google Services START
 #GoogleAccounts↓
-64.233.166.84 accounts.google.com
-64.233.166.84 accounts.l.google.com
+64.233.167.84 accounts.google.com
+64.233.167.84 accounts.l.google.com
 #GoogleAccounts↑
 #www.google.com↓
-64.233.166.106  www.google.com
+64.233.167.106  www.google.com
 #www.google.com↑
 #Googleapis↓
-210.242.125.114 mt0.googleapis.com
-210.242.125.114 mt1.googleapis.com
-210.242.125.114 mt2.googleapis.com
-210.242.125.114 mt3.googleapis.com
-210.242.125.114 mts0.googleapis.com
-210.242.125.114 mts1.googleapis.com
-210.242.125.114 mts2.googleapis.com
-210.242.125.114 mts3.googleapis.com
-210.242.125.114 googleapis.com
+210.242.125.118 mt0.googleapis.com
+210.242.125.118 mt1.googleapis.com
+210.242.125.118 mt2.googleapis.com
+210.242.125.118 mt3.googleapis.com
+210.242.125.118 mts0.googleapis.com
+210.242.125.118 mts1.googleapis.com
+210.242.125.118 mts2.googleapis.com
+210.242.125.118 mts3.googleapis.com
+210.242.125.118 googleapis.com
 64.233.185.95 www.googleapis.com
 64.233.185.95 android.googleapis.com
 64.233.185.95 play.googleapis.com
@@ -415,58 +1313,58 @@
 #74.125.235.165 www2-china.l.google.com
 #74.125.235.165 www3-china.l.google.com
 #74.125.235.165 www4-china.l.google.com
-64.233.166.100  android.clients.google.com
-64.233.166.100  android.l.google.com
-64.233.166.132  googlehosted.l.google.com
-210.242.125.114 base0.googlehosted.com
-210.242.125.114 base1.googlehosted.com
-210.242.125.114 base2.googlehosted.com
-210.242.125.114 base3.googlehosted.com
-210.242.125.114 base4.googlehosted.com
-210.242.125.114 base5.googlehosted.com
-64.233.166.113  clients.l.google.com
-64.233.166.139  clients1.google.com
-64.233.166.139  clients2.google.com
-64.233.166.139  clients3.google.com
-64.233.166.139  clients4.google.com
-64.233.166.139  clients5.google.com
-64.233.166.139  clients6.google.com
-64.233.166.139  clients7.google.com
-64.233.166.189  0.client-channel.google.com
-64.233.166.189  1.client-channel.google.com
-64.233.166.189  2.client-channel.google.com
-64.233.166.189  3.client-channel.google.com
-64.233.166.189  4.client-channel.google.com
-64.233.166.189  5.client-channel.google.com
-64.233.166.189  6.client-channel.google.com
-64.233.166.189  7.client-channel.google.com
-64.233.166.189  8.client-channel.google.com
-64.233.166.189  9.client-channel.google.com
-64.233.166.188  mtalk.google.com
-64.233.166.125  talk.google.com
-64.233.166.125  talkx.l.google.com
-64.233.166.125  talk.l.google.com
-64.233.166.211  proxy.googlezip.net
-64.233.166.211  ext.google.com
+64.233.185.100  android.clients.google.com
+64.233.185.100  android.l.google.com
+64.233.167.132  googlehosted.l.google.com
+210.242.125.118 base0.googlehosted.com
+210.242.125.118 base1.googlehosted.com
+210.242.125.118 base2.googlehosted.com
+210.242.125.118 base3.googlehosted.com
+210.242.125.118 base4.googlehosted.com
+210.242.125.118 base5.googlehosted.com
+64.233.167.113  clients.l.google.com
+64.233.167.139  clients1.google.com
+64.233.167.139  clients2.google.com
+64.233.167.139  clients3.google.com
+64.233.167.139  clients4.google.com
+64.233.167.139  clients5.google.com
+64.233.167.139  clients6.google.com
+64.233.167.139  clients7.google.com
+64.233.167.189  0.client-channel.google.com
+64.233.167.189  1.client-channel.google.com
+64.233.167.189  2.client-channel.google.com
+64.233.167.189  3.client-channel.google.com
+64.233.167.189  4.client-channel.google.com
+64.233.167.189  5.client-channel.google.com
+64.233.167.189  6.client-channel.google.com
+64.233.167.189  7.client-channel.google.com
+64.233.167.189  8.client-channel.google.com
+64.233.167.189  9.client-channel.google.com
+64.233.167.188  mtalk.google.com
+64.233.167.125  talk.google.com
+64.233.167.125  talkx.l.google.com
+64.233.167.125  talk.l.google.com
+64.233.167.211  proxy.googlezip.net
+64.233.167.211  ext.google.com
 #Android↑
 #Youtube↓
-64.233.166.100  accounts.youtube.com
-64.233.166.100  youtube.com
-64.233.166.100  youtu.be
-64.233.166.100  www.youtube.com
-64.233.166.100  m.youtube.com
-64.233.166.100  insight.youtube.com
-#64.233.166.100 apiblog.youtube.com
-64.233.166.100  help.youtube.com
-64.233.166.100  i.ytimg.com
-64.233.166.100  i1.ytimg.com
-64.233.166.100  i2.ytimg.com
-64.233.166.100  i3.ytimg.com
-64.233.166.100  i4.ytimg.com
-64.233.166.100  s.ytimg.com
-64.233.166.100  ytimg.l.google.com
-64.233.166.106  manifest.googlevideo.com
-64.233.166.113  redirector.googlevideo.com
+64.233.185.100  accounts.youtube.com
+64.233.185.100  youtube.com
+64.233.185.100  youtu.be
+64.233.185.100  www.youtube.com
+64.233.185.100  m.youtube.com
+64.233.185.100  insight.youtube.com
+#64.233.185.100 apiblog.youtube.com
+64.233.185.100  help.youtube.com
+64.233.185.100  i.ytimg.com
+64.233.185.100  i1.ytimg.com
+64.233.185.100  i2.ytimg.com
+64.233.185.100  i3.ytimg.com
+64.233.185.100  i4.ytimg.com
+64.233.185.100  s.ytimg.com
+64.233.185.100  ytimg.l.google.com
+64.233.167.106  manifest.googlevideo.com
+64.233.167.113  redirector.googlevideo.com
 208.117.236.134 r1---sn-25g7sm76.c.youtube.com
 208.117.236.135 r2---sn-25g7sm76.c.youtube.com
 208.117.236.136 r3---sn-25g7sm76.c.youtube.com
@@ -1733,53 +2631,53 @@
 208.117.255.185 r20---sn-vgqsem7l.googlevideo.com
 #Youtube↑
 #UpLoad↓
-64.233.166.100  uploads.clients.google.com
-64.233.166.100  uploads.client.google.com
-64.233.166.100  upload.clients.google.com
-64.233.166.100  upload.client.google.com
-64.233.166.117  upload.google.com
-64.233.166.117  upload.docs.google.com
-64.233.166.117  upload.photos.google.com
-64.233.166.117  upload.drive.google.com
-64.233.166.117  upload.video.google.com
-64.233.166.117  upload.youtube.com
-64.233.166.117  uploads.stage.gdata.youtube.com
-64.233.166.117  uploads.code.google.com
-64.233.166.117  uploads.clients.google.com
+64.233.185.100  uploads.clients.google.com
+64.233.185.100  uploads.client.google.com
+64.233.185.100  upload.clients.google.com
+64.233.185.100  upload.client.google.com
+64.233.167.117  upload.google.com
+64.233.167.117  upload.docs.google.com
+64.233.167.117  upload.photos.google.com
+64.233.167.117  upload.drive.google.com
+64.233.167.117  upload.video.google.com
+64.233.167.117  upload.youtube.com
+64.233.167.117  uploads.stage.gdata.youtube.com
+64.233.167.117  uploads.code.google.com
+64.233.167.117  uploads.clients.google.com
 #UpLoad↑
 #Appspot↓
-64.233.166.141  www.appspot.com
-64.233.166.141  appspot.com
-64.233.166.141  betaspike.appspot.com
-64.233.166.141  chrome-devtools-frontend.appspot.com
-64.233.166.141  chrometophone.appspot.com
-64.233.166.141  evolutionofweb.appspot.com
-64.233.166.141  feedly-beta.appspot.com
-64.233.166.141  googcloudlabs.appspot.com
-64.233.166.141  gv-gadget.appspot.com
-64.233.166.141  lfe-alpo-gm.appspot.com
-64.233.166.141  m-dot-betaspike.appspot.com
-64.233.166.141  moderator.appspot.com
-64.233.166.141  newsfeed-dot-latest-dot-rovio-ad-engine.appspot.com
-64.233.166.141  productideas.appspot.com
-64.233.166.141  project-slingshot-gp.appspot.com
-64.233.166.141  r2303.latest.project-slingshot-hr.appspot.com
-64.233.166.141  r3085-dot-latest-dot-project-slingshot-gp.appspot.com
-64.233.166.141  r3091-dot-latest-dot-project-slingshot-gp.appspot.com
-64.233.166.141  r3101-dot-latest-dot-project-slingshot-gp.appspot.com
-64.233.166.141  r3269-dot-latest-dot-project-slingshot-gp.appspot.com
-64.233.166.141  r3432-dot-latest-dot-project-slingshot-hr.appspot.com
-64.233.166.141  r4681-dot-latest-dot-project-slingshot-hr.appspot.com
-64.233.166.141  r7647-dot-latest-dot-project-slingshot-hr.appspot.com
-64.233.166.141  wcproxyx.appspot.com
+64.233.167.141  www.appspot.com
+64.233.167.141  appspot.com
+64.233.167.141  betaspike.appspot.com
+64.233.167.141  chrome-devtools-frontend.appspot.com
+64.233.167.141  chrometophone.appspot.com
+64.233.167.141  evolutionofweb.appspot.com
+64.233.167.141  feedly-beta.appspot.com
+64.233.167.141  googcloudlabs.appspot.com
+64.233.167.141  gv-gadget.appspot.com
+64.233.167.141  lfe-alpo-gm.appspot.com
+64.233.167.141  m-dot-betaspike.appspot.com
+64.233.167.141  moderator.appspot.com
+64.233.167.141  newsfeed-dot-latest-dot-rovio-ad-engine.appspot.com
+64.233.167.141  productideas.appspot.com
+64.233.167.141  project-slingshot-gp.appspot.com
+64.233.167.141  r2303.latest.project-slingshot-hr.appspot.com
+64.233.167.141  r3085-dot-latest-dot-project-slingshot-gp.appspot.com
+64.233.167.141  r3091-dot-latest-dot-project-slingshot-gp.appspot.com
+64.233.167.141  r3101-dot-latest-dot-project-slingshot-gp.appspot.com
+64.233.167.141  r3269-dot-latest-dot-project-slingshot-gp.appspot.com
+64.233.167.141  r3432-dot-latest-dot-project-slingshot-hr.appspot.com
+64.233.167.141  r4681-dot-latest-dot-project-slingshot-hr.appspot.com
+64.233.167.141  r7647-dot-latest-dot-project-slingshot-hr.appspot.com
+64.233.167.141  wcproxyx.appspot.com
 #Appspot↑
 #GoogleDrive↓
-210.242.125.114 drive.google.com
-210.242.125.114 docs.google.com
-64.233.166.132  googledrive.com
-64.233.166.132  storage.googleapis.com
-64.233.166.132  commondatastorage.googleapis.com
-64.233.166.132  static.panoramio.com.storage.googleapis.com
+210.242.125.118 drive.google.com
+210.242.125.118 docs.google.com
+64.233.167.132  googledrive.com
+64.233.167.132  storage.googleapis.com
+64.233.167.132  commondatastorage.googleapis.com
+64.233.167.132  static.panoramio.com.storage.googleapis.com
 #203.208.46.134 docs0.google.com
 #203.208.46.134 docs1.google.com
 #203.208.46.134 docs2.google.com
@@ -1790,739 +2688,739 @@
 #203.208.46.134 docs7.google.com
 #203.208.46.134 docs8.google.com
 #203.208.46.134 docs9.google.com
-64.233.166.189  0.docs.google.com
-64.233.166.189  0.drive.google.com
-64.233.166.189  1.docs.google.com
-64.233.166.189  1.drive.google.com
-64.233.166.189  2.docs.google.com
-64.233.166.189  2.drive.google.com
-64.233.166.189  3.docs.google.com
-64.233.166.189  3.drive.google.com
-64.233.166.189  4.docs.google.com
-64.233.166.189  4.drive.google.com
-64.233.166.189  5.docs.google.com
-64.233.166.189  5.drive.google.com
-64.233.166.189  6.docs.google.com
-64.233.166.189  6.drive.google.com
-64.233.166.189  7.docs.google.com
-64.233.166.189  7.drive.google.com
-64.233.166.189  8.docs.google.com
-64.233.166.189  8.drive.google.com
-64.233.166.189  9.docs.google.com
-64.233.166.189  9.drive.google.com
-64.233.166.189  10.docs.google.com
-64.233.166.189  10.drive.google.com
-64.233.166.189  11.docs.google.com
-64.233.166.189  11.drive.google.com
-64.233.166.189  12.docs.google.com
-64.233.166.189  12.drive.google.com
-64.233.166.189  13.docs.google.com
-64.233.166.189  13.drive.google.com
-64.233.166.189  14.docs.google.com
-64.233.166.189  14.drive.google.com
-64.233.166.189  15.docs.google.com
-64.233.166.189  15.drive.google.com
-64.233.166.189  16.docs.google.com
-64.233.166.189  16.drive.google.com
+64.233.167.189  0.docs.google.com
+64.233.167.189  0.drive.google.com
+64.233.167.189  1.docs.google.com
+64.233.167.189  1.drive.google.com
+64.233.167.189  2.docs.google.com
+64.233.167.189  2.drive.google.com
+64.233.167.189  3.docs.google.com
+64.233.167.189  3.drive.google.com
+64.233.167.189  4.docs.google.com
+64.233.167.189  4.drive.google.com
+64.233.167.189  5.docs.google.com
+64.233.167.189  5.drive.google.com
+64.233.167.189  6.docs.google.com
+64.233.167.189  6.drive.google.com
+64.233.167.189  7.docs.google.com
+64.233.167.189  7.drive.google.com
+64.233.167.189  8.docs.google.com
+64.233.167.189  8.drive.google.com
+64.233.167.189  9.docs.google.com
+64.233.167.189  9.drive.google.com
+64.233.167.189  10.docs.google.com
+64.233.167.189  10.drive.google.com
+64.233.167.189  11.docs.google.com
+64.233.167.189  11.drive.google.com
+64.233.167.189  12.docs.google.com
+64.233.167.189  12.drive.google.com
+64.233.167.189  13.docs.google.com
+64.233.167.189  13.drive.google.com
+64.233.167.189  14.docs.google.com
+64.233.167.189  14.drive.google.com
+64.233.167.189  15.docs.google.com
+64.233.167.189  15.drive.google.com
+64.233.167.189  16.docs.google.com
+64.233.167.189  16.drive.google.com
 #GoogleDrive↑
 #Googleusercontent↓
-64.233.166.132  www.googleusercontent.com
-64.233.166.132  googlehosted.l.googleusercontent.com
-64.233.166.132  oauth.googleusercontent.com
-64.233.166.132  feedback.googleusercontent.com
-64.233.166.132  translate.googleusercontent.com
-64.233.166.132  themes.googleusercontent.com
-64.233.166.132  webcache.googleusercontent.com
-64.233.166.132  books.googleusercontent.com
-64.233.166.132  video.googleusercontent.com
-64.233.166.132  mail-attachment.googleusercontent.com
-64.233.166.132  music-onebox.googleusercontent.com
-64.233.166.132  music.googleusercontent.com
-64.233.166.132  blogger.googleusercontent.com
-64.233.166.132  newsstand.googleusercontent.com
-64.233.166.132  producer.googleusercontent.com
-64.233.166.132  code-opensocial.googleusercontent.com
-64.233.166.132  spreadsheets-opensocial.googleusercontent.com
-64.233.166.132  www-calENDar-opensocial.googleusercontent.com
-64.233.166.132  www-fc-opensocial.googleusercontent.com
-64.233.166.132  www-focus-opensocial.googleusercontent.com
-64.233.166.132  www-gm-opensocial.googleusercontent.com
-64.233.166.132  www-kix-opensocial.googleusercontent.com
-64.233.166.132  www-open-opensocial.googleusercontent.com
-64.233.166.132  www-opensocial.googleusercontent.com
-64.233.166.132  www-opensocial-sandbox.googleusercontent.com
-64.233.166.132  www-oz-opensocial.googleusercontent.com
-64.233.166.132  1-ps.googleusercontent.com
-64.233.166.132  2-ps.googleusercontent.com
-64.233.166.132  3-ps.googleusercontent.com
-64.233.166.132  4-ps.googleusercontent.com
-64.233.166.132  0-open-opensocial.googleusercontent.com
-64.233.166.132  0-focus-opensocial.googleusercontent.com
-64.233.166.132  1-focus-opensocial.googleusercontent.com
-64.233.166.132  1-open-opensocial.googleusercontent.com
-64.233.166.132  2-focus-opensocial.googleusercontent.com
-64.233.166.132  2-open-opensocial.googleusercontent.com
-64.233.166.132  3-focus-opensocial.googleusercontent.com
-64.233.166.132  3-open-opensocial.googleusercontent.com
-64.233.166.132  a-oz-opensocial.googleusercontent.com
-64.233.166.132  4fjvqid3r3oq66t548clrdj52df15coc-a-oz-opensocial.googleusercontent.com
-64.233.166.132  53rd6p0catml6vat6qra84rs0del836d-a-oz-opensocial.googleusercontent.com
-64.233.166.132  59cbv4l9s05pbaks9v77vc3mengeqors-a-oz-opensocial.googleusercontent.com
-64.233.166.132  8kubpeu8314p2efdd7jlv09an9i2ljdo-a-oz-opensocial.googleusercontent.com
-64.233.166.132  adstvca8k2ooaknjjmv89j22n9t676ve-a-oz-opensocial.googleusercontent.com
-64.233.166.132  bt26mravu2qpe56n8gnmjnpv2inl84bf-a-oz-opensocial.googleusercontent.com
-64.233.166.132  debh8vg7vd93bco3prdajidmm7dhql3f-a-oz-opensocial.googleusercontent.com
-64.233.166.132  hsco54a20sh11q9jkmb51ad2n3hmkmrg-a-oz-opensocial.googleusercontent.com
-64.233.166.132  k6v18tjr24doa89b55o3na41kn4v73eb-a-oz-opensocial.googleusercontent.com
-64.233.166.132  i8brh95qor6r54nkl52hidj2ggcs4jgm-a-oz-opensocial.googleusercontent.com
-64.233.166.132  ob7f2qc0i50kbjnc81vkhgmb5hsv7a8l-a-oz-opensocial.googleusercontent.com
-64.233.166.132  qhie5b8u979rnch1q0hqbrmbkn9estf7-a-oz-opensocial.googleusercontent.com
-64.233.166.132  u807isd5egseeabjccgcns005p2miucq-a-oz-opensocial.googleusercontent.com
-64.233.166.132  upt14k1i2veesusrda9nfotcrbp9d7p5-a-oz-opensocial.googleusercontent.com
-64.233.166.132  4lam9a1ki27mb9p1h5q3furvvf58ss02-a-gm-opensocial.googleusercontent.com
-#64.233.166.132 r70rmsn4s0rhk6cehcbbcbfbs31pu0va-a-oz-opensocial.googleusercontent.com
-#64.233.166.132 rbjhe237k979f79d87gmenp3gejfonu9-a-oz-opensocial.googleusercontent.com
-64.233.166.132  ode25pfjgmvpquh3b1oqo31ti5ibg5fr-a-calENDar.opensocial.googleusercontent.com
-64.233.166.132  3hdrrlnlknhi77nrmsjnjr152ueo3soc-a-calENDar-opensocial.googleusercontent.com
-64.233.166.132  clients1.googleusercontent.com
-64.233.166.132  clients2.googleusercontent.com
-64.233.166.132  clients3.googleusercontent.com
-64.233.166.132  clients4.googleusercontent.com
-64.233.166.132  clients5.googleusercontent.com
-64.233.166.132  clients6.googleusercontent.com
-64.233.166.132  clients7.googleusercontent.com
-64.233.166.132  doc-00-7o-docs.googleusercontent.com
-64.233.166.132  doc-01-7o-docs.googleusercontent.com
-64.233.166.132  doc-02-7o-docs.googleusercontent.com
-64.233.166.132  doc-03-7o-docs.googleusercontent.com
-64.233.166.132  doc-04-7o-docs.googleusercontent.com
-64.233.166.132  doc-05-7o-docs.googleusercontent.com
-64.233.166.132  doc-06-7o-docs.googleusercontent.com
-64.233.166.132  doc-07-7o-docs.googleusercontent.com
-64.233.166.132  doc-08-7o-docs.googleusercontent.com
-64.233.166.132  doc-09-7o-docs.googleusercontent.com
-64.233.166.132  doc-10-7o-docs.googleusercontent.com
-64.233.166.132  doc-0a-7o-docs.googleusercontent.com
-64.233.166.132  doc-0b-7o-docs.googleusercontent.com
-64.233.166.132  doc-0c-7o-docs.googleusercontent.com
-64.233.166.132  doc-0d-7o-docs.googleusercontent.com
-64.233.166.132  doc-0e-7o-docs.googleusercontent.com
-64.233.166.132  doc-0f-7o-docs.googleusercontent.com
-64.233.166.132  doc-0g-7o-docs.googleusercontent.com
-64.233.166.132  doc-0h-7o-docs.googleusercontent.com
-64.233.166.132  doc-0i-7o-docs.googleusercontent.com
-64.233.166.132  doc-0j-7o-docs.googleusercontent.com
-64.233.166.132  doc-0k-7o-docs.googleusercontent.com
-64.233.166.132  doc-0l-7o-docs.googleusercontent.com
-64.233.166.132  doc-0m-7o-docs.googleusercontent.com
-64.233.166.132  doc-0n-7o-docs.googleusercontent.com
-64.233.166.132  doc-0o-7o-docs.googleusercontent.com
-64.233.166.132  doc-0p-7o-docs.googleusercontent.com
-64.233.166.132  doc-0q-7o-docs.googleusercontent.com
-64.233.166.132  doc-0r-7o-docs.googleusercontent.com
-64.233.166.132  doc-0s-7o-docs.googleusercontent.com
-64.233.166.132  doc-0t-7o-docs.googleusercontent.com
-64.233.166.132  doc-00-bc-docs.googleusercontent.com
-64.233.166.132  doc-01-bc-docs.googleusercontent.com
-64.233.166.132  doc-02-bc-docs.googleusercontent.com
-64.233.166.132  doc-03-bc-docs.googleusercontent.com
-64.233.166.132  doc-04-bc-docs.googleusercontent.com
-64.233.166.132  doc-05-bc-docs.googleusercontent.com
-64.233.166.132  doc-06-bc-docs.googleusercontent.com
-64.233.166.132  doc-07-bc-docs.googleusercontent.com
-64.233.166.132  doc-08-bc-docs.googleusercontent.com
-64.233.166.132  doc-09-bc-docs.googleusercontent.com
-64.233.166.132  doc-10-bc-docs.googleusercontent.com
-64.233.166.132  doc-0a-bc-docs.googleusercontent.com
-64.233.166.132  doc-0b-bc-docs.googleusercontent.com
-64.233.166.132  doc-0c-bc-docs.googleusercontent.com
-64.233.166.132  doc-0d-bc-docs.googleusercontent.com
-64.233.166.132  doc-0e-bc-docs.googleusercontent.com
-64.233.166.132  doc-0f-bc-docs.googleusercontent.com
-64.233.166.132  doc-0g-bc-docs.googleusercontent.com
-64.233.166.132  doc-0h-bc-docs.googleusercontent.com
-64.233.166.132  doc-0i-bc-docs.googleusercontent.com
-64.233.166.132  doc-0j-bc-docs.googleusercontent.com
-64.233.166.132  doc-0k-bc-docs.googleusercontent.com
-64.233.166.132  doc-0l-bc-docs.googleusercontent.com
-64.233.166.132  doc-0m-bc-docs.googleusercontent.com
-64.233.166.132  doc-0n-bc-docs.googleusercontent.com
-64.233.166.132  doc-0o-bc-docs.googleusercontent.com
-64.233.166.132  doc-0p-bc-docs.googleusercontent.com
-64.233.166.132  doc-0q-bc-docs.googleusercontent.com
-64.233.166.132  doc-0r-bc-docs.googleusercontent.com
-64.233.166.132  doc-0s-bc-docs.googleusercontent.com
-64.233.166.132  doc-0t-bc-docs.googleusercontent.com
-64.233.166.132  doc-00-1s-docs.googleusercontent.com
-64.233.166.132  doc-01-1s-docs.googleusercontent.com
-64.233.166.132  doc-02-1s-docs.googleusercontent.com
-64.233.166.132  doc-03-1s-docs.googleusercontent.com
-64.233.166.132  doc-04-1s-docs.googleusercontent.com
-64.233.166.132  doc-05-1s-docs.googleusercontent.com
-64.233.166.132  doc-06-1s-docs.googleusercontent.com
-64.233.166.132  doc-07-1s-docs.googleusercontent.com
-64.233.166.132  doc-08-1s-docs.googleusercontent.com
-64.233.166.132  doc-09-1s-docs.googleusercontent.com
-64.233.166.132  doc-10-1s-docs.googleusercontent.com
-64.233.166.132  doc-0a-1s-docs.googleusercontent.com
-64.233.166.132  doc-0b-1s-docs.googleusercontent.com
-64.233.166.132  doc-0c-1s-docs.googleusercontent.com
-64.233.166.132  doc-0d-1s-docs.googleusercontent.com
-64.233.166.132  doc-0e-1s-docs.googleusercontent.com
-64.233.166.132  doc-0f-1s-docs.googleusercontent.com
-64.233.166.132  doc-0g-1s-docs.googleusercontent.com
-64.233.166.132  doc-0h-1s-docs.googleusercontent.com
-64.233.166.132  doc-0i-1s-docs.googleusercontent.com
-64.233.166.132  doc-0j-1s-docs.googleusercontent.com
-64.233.166.132  doc-0k-1s-docs.googleusercontent.com
-64.233.166.132  doc-0l-1s-docs.googleusercontent.com
-64.233.166.132  doc-0m-1s-docs.googleusercontent.com
-64.233.166.132  doc-0n-1s-docs.googleusercontent.com
-64.233.166.132  doc-0o-1s-docs.googleusercontent.com
-64.233.166.132  doc-0p-1s-docs.googleusercontent.com
-64.233.166.132  doc-0q-1s-docs.googleusercontent.com
-64.233.166.132  doc-0r-1s-docs.googleusercontent.com
-64.233.166.132  doc-0s-1s-docs.googleusercontent.com
-64.233.166.132  doc-0t-1s-docs.googleusercontent.com
-64.233.166.132  doc-04-80-docs.googleusercontent.com
-64.233.166.132  doc-08-6g-docs.googleusercontent.com
-64.233.166.132  doc-0k-bk-docs.googleusercontent.com
-64.233.166.132  doc-10-6g-docs.googleusercontent.com
-64.233.166.132  doc-10-00-docs.googleusercontent.com
-#64.233.166.132 t.doc-0-0-sj.sj.googleusercontent.com
-64.233.166.132  images1-focus-opensocial.googleusercontent.com
-64.233.166.132  images2-focus-opensocial.googleusercontent.com
-64.233.166.132  images3-focus-opensocial.googleusercontent.com
-64.233.166.132  images4-focus-opensocial.googleusercontent.com
-64.233.166.132  images5-focus-opensocial.googleusercontent.com
-64.233.166.132  images6-focus-opensocial.googleusercontent.com
-64.233.166.132  images7-focus-opensocial.googleusercontent.com
-64.233.166.132  images8-focus-opensocial.googleusercontent.com
-64.233.166.132  images9-focus-opensocial.googleusercontent.com
-64.233.166.132  images1-esmobile-opensocial.googleusercontent.com
-64.233.166.132  images2-esmobile-opensocial.googleusercontent.com
-64.233.166.132  images3-esmobile-opensocial.googleusercontent.com
-64.233.166.132  images4-esmobile-opensocial.googleusercontent.com
-64.233.166.132  images5-esmobile-opensocial.googleusercontent.com
-64.233.166.132  images6-esmobile-opensocial.googleusercontent.com
-64.233.166.132  images7-esmobile-opensocial.googleusercontent.com
-64.233.166.132  images8-esmobile-opensocial.googleusercontent.com
-64.233.166.132  images9-esmobile-opensocial.googleusercontent.com
-64.233.166.132  images-docs-opensocial.googleusercontent.com
-64.233.166.132  images-oz-opensocial.googleusercontent.com
-64.233.166.132  images-lso-opensocial.googleusercontent.com
-64.233.166.132  images-blogger-opensocial.googleusercontent.com
-64.233.166.132  images-pos-opensocial.googleusercontent.com
-64.233.166.132  lh0.googleusercontent.com
-64.233.166.132  lh1.googleusercontent.com
-64.233.166.132  lh2.googleusercontent.com
-64.233.166.132  lh3.googleusercontent.com
-64.233.166.132  lh4.googleusercontent.com
-64.233.166.132  lh5.googleusercontent.com
-64.233.166.132  lh6.googleusercontent.com
-210.242.125.114 gp1.googleusercontent.com
-210.242.125.114 gp2.googleusercontent.com
-210.242.125.114 gp3.googleusercontent.com
-210.242.125.114 gp4.googleusercontent.com
-210.242.125.114 gp5.googleusercontent.com
-210.242.125.114 gp6.googleusercontent.com
-64.233.166.132  lh0.ggpht.com
-64.233.166.132  lh1.ggpht.com
-64.233.166.132  lh2.ggpht.com
-64.233.166.132  lh3.ggpht.com
-64.233.166.132  lh4.ggpht.com
-64.233.166.132  lh5.ggpht.com
-64.233.166.132  lh6.ggpht.com
-64.233.166.132  nt0.ggpht.com
-64.233.166.132  nt1.ggpht.com
-64.233.166.132  nt2.ggpht.com
-64.233.166.132  nt3.ggpht.com
-64.233.166.132  nt4.ggpht.com
-64.233.166.132  nt5.ggpht.com
-64.233.166.132  nt6.ggpht.com
-64.233.166.132  yt0.ggpht.com
-64.233.166.132  yt1.ggpht.com
-64.233.166.132  yt2.ggpht.com
-64.233.166.132  yt3.ggpht.com
-64.233.166.132  yt4.ggpht.com
-64.233.166.132  yt5.ggpht.com
-64.233.166.132  yt6.ggpht.com
-64.233.166.132  gm0.ggpht.com
-64.233.166.132  gm1.ggpht.com
-64.233.166.132  gm2.ggpht.com
-64.233.166.132  gm3.ggpht.com
-64.233.166.132  gm4.ggpht.com
-64.233.166.132  gm5.ggpht.com
-64.233.166.132  gm6.ggpht.com
-64.233.166.132  geo0.ggpht.com
-64.233.166.132  geo1.ggpht.com
-64.233.166.132  geo2.ggpht.com
-64.233.166.132  geo3.ggpht.com
-64.233.166.132  geo4.ggpht.com
-64.233.166.132  geo5.ggpht.com
-64.233.166.132  geo6.ggpht.com
-64.233.166.132  ci1.googleusercontent.com
-64.233.166.132  ci2.googleusercontent.com
-64.233.166.132  ci3.googleusercontent.com
-64.233.166.132  ci4.googleusercontent.com
-64.233.166.132  ci5.googleusercontent.com
-64.233.166.132  ci6.googleusercontent.com
-64.233.166.132  s1.googleusercontent.com
-64.233.166.132  s2.googleusercontent.com
-64.233.166.132  s3.googleusercontent.com
-64.233.166.132  s4.googleusercontent.com
-64.233.166.132  s5.googleusercontent.com
-64.233.166.132  s6.googleusercontent.com
-64.233.166.133  sp0.googleusercontent.com
-64.233.166.133  sp1.googleusercontent.com
-64.233.166.133  sp2.googleusercontent.com
-64.233.166.133  sp3.googleusercontent.com
-64.233.166.133  sp4.googleusercontent.com
-64.233.166.133  sp5.googleusercontent.com
-64.233.166.133  sp6.googleusercontent.com
-64.233.166.133  sp7.googleusercontent.com
-64.233.166.133  sp8.googleusercontent.com
-64.233.166.133  sp9.googleusercontent.com
+64.233.167.132  www.googleusercontent.com
+64.233.167.132  googlehosted.l.googleusercontent.com
+64.233.167.132  oauth.googleusercontent.com
+64.233.167.132  feedback.googleusercontent.com
+64.233.167.132  translate.googleusercontent.com
+64.233.167.132  themes.googleusercontent.com
+64.233.167.132  webcache.googleusercontent.com
+64.233.167.132  books.googleusercontent.com
+64.233.167.132  video.googleusercontent.com
+64.233.167.132  mail-attachment.googleusercontent.com
+64.233.167.132  music-onebox.googleusercontent.com
+64.233.167.132  music.googleusercontent.com
+64.233.167.132  blogger.googleusercontent.com
+64.233.167.132  newsstand.googleusercontent.com
+64.233.167.132  producer.googleusercontent.com
+64.233.167.132  code-opensocial.googleusercontent.com
+64.233.167.132  spreadsheets-opensocial.googleusercontent.com
+64.233.167.132  www-calENDar-opensocial.googleusercontent.com
+64.233.167.132  www-fc-opensocial.googleusercontent.com
+64.233.167.132  www-focus-opensocial.googleusercontent.com
+64.233.167.132  www-gm-opensocial.googleusercontent.com
+64.233.167.132  www-kix-opensocial.googleusercontent.com
+64.233.167.132  www-open-opensocial.googleusercontent.com
+64.233.167.132  www-opensocial.googleusercontent.com
+64.233.167.132  www-opensocial-sandbox.googleusercontent.com
+64.233.167.132  www-oz-opensocial.googleusercontent.com
+64.233.167.132  1-ps.googleusercontent.com
+64.233.167.132  2-ps.googleusercontent.com
+64.233.167.132  3-ps.googleusercontent.com
+64.233.167.132  4-ps.googleusercontent.com
+64.233.167.132  0-open-opensocial.googleusercontent.com
+64.233.167.132  0-focus-opensocial.googleusercontent.com
+64.233.167.132  1-focus-opensocial.googleusercontent.com
+64.233.167.132  1-open-opensocial.googleusercontent.com
+64.233.167.132  2-focus-opensocial.googleusercontent.com
+64.233.167.132  2-open-opensocial.googleusercontent.com
+64.233.167.132  3-focus-opensocial.googleusercontent.com
+64.233.167.132  3-open-opensocial.googleusercontent.com
+64.233.167.132  a-oz-opensocial.googleusercontent.com
+64.233.167.132  4fjvqid3r3oq66t548clrdj52df15coc-a-oz-opensocial.googleusercontent.com
+64.233.167.132  53rd6p0catml6vat6qra84rs0del836d-a-oz-opensocial.googleusercontent.com
+64.233.167.132  59cbv4l9s05pbaks9v77vc3mengeqors-a-oz-opensocial.googleusercontent.com
+64.233.167.132  8kubpeu8314p2efdd7jlv09an9i2ljdo-a-oz-opensocial.googleusercontent.com
+64.233.167.132  adstvca8k2ooaknjjmv89j22n9t676ve-a-oz-opensocial.googleusercontent.com
+64.233.167.132  bt26mravu2qpe56n8gnmjnpv2inl84bf-a-oz-opensocial.googleusercontent.com
+64.233.167.132  debh8vg7vd93bco3prdajidmm7dhql3f-a-oz-opensocial.googleusercontent.com
+64.233.167.132  hsco54a20sh11q9jkmb51ad2n3hmkmrg-a-oz-opensocial.googleusercontent.com
+64.233.167.132  k6v18tjr24doa89b55o3na41kn4v73eb-a-oz-opensocial.googleusercontent.com
+64.233.167.132  i8brh95qor6r54nkl52hidj2ggcs4jgm-a-oz-opensocial.googleusercontent.com
+64.233.167.132  ob7f2qc0i50kbjnc81vkhgmb5hsv7a8l-a-oz-opensocial.googleusercontent.com
+64.233.167.132  qhie5b8u979rnch1q0hqbrmbkn9estf7-a-oz-opensocial.googleusercontent.com
+64.233.167.132  u807isd5egseeabjccgcns005p2miucq-a-oz-opensocial.googleusercontent.com
+64.233.167.132  upt14k1i2veesusrda9nfotcrbp9d7p5-a-oz-opensocial.googleusercontent.com
+64.233.167.132  4lam9a1ki27mb9p1h5q3furvvf58ss02-a-gm-opensocial.googleusercontent.com
+#64.233.167.132 r70rmsn4s0rhk6cehcbbcbfbs31pu0va-a-oz-opensocial.googleusercontent.com
+#64.233.167.132 rbjhe237k979f79d87gmenp3gejfonu9-a-oz-opensocial.googleusercontent.com
+64.233.167.132  ode25pfjgmvpquh3b1oqo31ti5ibg5fr-a-calENDar.opensocial.googleusercontent.com
+64.233.167.132  3hdrrlnlknhi77nrmsjnjr152ueo3soc-a-calENDar-opensocial.googleusercontent.com
+64.233.167.132  clients1.googleusercontent.com
+64.233.167.132  clients2.googleusercontent.com
+64.233.167.132  clients3.googleusercontent.com
+64.233.167.132  clients4.googleusercontent.com
+64.233.167.132  clients5.googleusercontent.com
+64.233.167.132  clients6.googleusercontent.com
+64.233.167.132  clients7.googleusercontent.com
+64.233.167.132  doc-00-7o-docs.googleusercontent.com
+64.233.167.132  doc-01-7o-docs.googleusercontent.com
+64.233.167.132  doc-02-7o-docs.googleusercontent.com
+64.233.167.132  doc-03-7o-docs.googleusercontent.com
+64.233.167.132  doc-04-7o-docs.googleusercontent.com
+64.233.167.132  doc-05-7o-docs.googleusercontent.com
+64.233.167.132  doc-06-7o-docs.googleusercontent.com
+64.233.167.132  doc-07-7o-docs.googleusercontent.com
+64.233.167.132  doc-08-7o-docs.googleusercontent.com
+64.233.167.132  doc-09-7o-docs.googleusercontent.com
+64.233.167.132  doc-10-7o-docs.googleusercontent.com
+64.233.167.132  doc-0a-7o-docs.googleusercontent.com
+64.233.167.132  doc-0b-7o-docs.googleusercontent.com
+64.233.167.132  doc-0c-7o-docs.googleusercontent.com
+64.233.167.132  doc-0d-7o-docs.googleusercontent.com
+64.233.167.132  doc-0e-7o-docs.googleusercontent.com
+64.233.167.132  doc-0f-7o-docs.googleusercontent.com
+64.233.167.132  doc-0g-7o-docs.googleusercontent.com
+64.233.167.132  doc-0h-7o-docs.googleusercontent.com
+64.233.167.132  doc-0i-7o-docs.googleusercontent.com
+64.233.167.132  doc-0j-7o-docs.googleusercontent.com
+64.233.167.132  doc-0k-7o-docs.googleusercontent.com
+64.233.167.132  doc-0l-7o-docs.googleusercontent.com
+64.233.167.132  doc-0m-7o-docs.googleusercontent.com
+64.233.167.132  doc-0n-7o-docs.googleusercontent.com
+64.233.167.132  doc-0o-7o-docs.googleusercontent.com
+64.233.167.132  doc-0p-7o-docs.googleusercontent.com
+64.233.167.132  doc-0q-7o-docs.googleusercontent.com
+64.233.167.132  doc-0r-7o-docs.googleusercontent.com
+64.233.167.132  doc-0s-7o-docs.googleusercontent.com
+64.233.167.132  doc-0t-7o-docs.googleusercontent.com
+64.233.167.132  doc-00-bc-docs.googleusercontent.com
+64.233.167.132  doc-01-bc-docs.googleusercontent.com
+64.233.167.132  doc-02-bc-docs.googleusercontent.com
+64.233.167.132  doc-03-bc-docs.googleusercontent.com
+64.233.167.132  doc-04-bc-docs.googleusercontent.com
+64.233.167.132  doc-05-bc-docs.googleusercontent.com
+64.233.167.132  doc-06-bc-docs.googleusercontent.com
+64.233.167.132  doc-07-bc-docs.googleusercontent.com
+64.233.167.132  doc-08-bc-docs.googleusercontent.com
+64.233.167.132  doc-09-bc-docs.googleusercontent.com
+64.233.167.132  doc-10-bc-docs.googleusercontent.com
+64.233.167.132  doc-0a-bc-docs.googleusercontent.com
+64.233.167.132  doc-0b-bc-docs.googleusercontent.com
+64.233.167.132  doc-0c-bc-docs.googleusercontent.com
+64.233.167.132  doc-0d-bc-docs.googleusercontent.com
+64.233.167.132  doc-0e-bc-docs.googleusercontent.com
+64.233.167.132  doc-0f-bc-docs.googleusercontent.com
+64.233.167.132  doc-0g-bc-docs.googleusercontent.com
+64.233.167.132  doc-0h-bc-docs.googleusercontent.com
+64.233.167.132  doc-0i-bc-docs.googleusercontent.com
+64.233.167.132  doc-0j-bc-docs.googleusercontent.com
+64.233.167.132  doc-0k-bc-docs.googleusercontent.com
+64.233.167.132  doc-0l-bc-docs.googleusercontent.com
+64.233.167.132  doc-0m-bc-docs.googleusercontent.com
+64.233.167.132  doc-0n-bc-docs.googleusercontent.com
+64.233.167.132  doc-0o-bc-docs.googleusercontent.com
+64.233.167.132  doc-0p-bc-docs.googleusercontent.com
+64.233.167.132  doc-0q-bc-docs.googleusercontent.com
+64.233.167.132  doc-0r-bc-docs.googleusercontent.com
+64.233.167.132  doc-0s-bc-docs.googleusercontent.com
+64.233.167.132  doc-0t-bc-docs.googleusercontent.com
+64.233.167.132  doc-00-1s-docs.googleusercontent.com
+64.233.167.132  doc-01-1s-docs.googleusercontent.com
+64.233.167.132  doc-02-1s-docs.googleusercontent.com
+64.233.167.132  doc-03-1s-docs.googleusercontent.com
+64.233.167.132  doc-04-1s-docs.googleusercontent.com
+64.233.167.132  doc-05-1s-docs.googleusercontent.com
+64.233.167.132  doc-06-1s-docs.googleusercontent.com
+64.233.167.132  doc-07-1s-docs.googleusercontent.com
+64.233.167.132  doc-08-1s-docs.googleusercontent.com
+64.233.167.132  doc-09-1s-docs.googleusercontent.com
+64.233.167.132  doc-10-1s-docs.googleusercontent.com
+64.233.167.132  doc-0a-1s-docs.googleusercontent.com
+64.233.167.132  doc-0b-1s-docs.googleusercontent.com
+64.233.167.132  doc-0c-1s-docs.googleusercontent.com
+64.233.167.132  doc-0d-1s-docs.googleusercontent.com
+64.233.167.132  doc-0e-1s-docs.googleusercontent.com
+64.233.167.132  doc-0f-1s-docs.googleusercontent.com
+64.233.167.132  doc-0g-1s-docs.googleusercontent.com
+64.233.167.132  doc-0h-1s-docs.googleusercontent.com
+64.233.167.132  doc-0i-1s-docs.googleusercontent.com
+64.233.167.132  doc-0j-1s-docs.googleusercontent.com
+64.233.167.132  doc-0k-1s-docs.googleusercontent.com
+64.233.167.132  doc-0l-1s-docs.googleusercontent.com
+64.233.167.132  doc-0m-1s-docs.googleusercontent.com
+64.233.167.132  doc-0n-1s-docs.googleusercontent.com
+64.233.167.132  doc-0o-1s-docs.googleusercontent.com
+64.233.167.132  doc-0p-1s-docs.googleusercontent.com
+64.233.167.132  doc-0q-1s-docs.googleusercontent.com
+64.233.167.132  doc-0r-1s-docs.googleusercontent.com
+64.233.167.132  doc-0s-1s-docs.googleusercontent.com
+64.233.167.132  doc-0t-1s-docs.googleusercontent.com
+64.233.167.132  doc-04-80-docs.googleusercontent.com
+64.233.167.132  doc-08-6g-docs.googleusercontent.com
+64.233.167.132  doc-0k-bk-docs.googleusercontent.com
+64.233.167.132  doc-10-6g-docs.googleusercontent.com
+64.233.167.132  doc-10-00-docs.googleusercontent.com
+#64.233.167.132 t.doc-0-0-sj.sj.googleusercontent.com
+64.233.167.132  images1-focus-opensocial.googleusercontent.com
+64.233.167.132  images2-focus-opensocial.googleusercontent.com
+64.233.167.132  images3-focus-opensocial.googleusercontent.com
+64.233.167.132  images4-focus-opensocial.googleusercontent.com
+64.233.167.132  images5-focus-opensocial.googleusercontent.com
+64.233.167.132  images6-focus-opensocial.googleusercontent.com
+64.233.167.132  images7-focus-opensocial.googleusercontent.com
+64.233.167.132  images8-focus-opensocial.googleusercontent.com
+64.233.167.132  images9-focus-opensocial.googleusercontent.com
+64.233.167.132  images1-esmobile-opensocial.googleusercontent.com
+64.233.167.132  images2-esmobile-opensocial.googleusercontent.com
+64.233.167.132  images3-esmobile-opensocial.googleusercontent.com
+64.233.167.132  images4-esmobile-opensocial.googleusercontent.com
+64.233.167.132  images5-esmobile-opensocial.googleusercontent.com
+64.233.167.132  images6-esmobile-opensocial.googleusercontent.com
+64.233.167.132  images7-esmobile-opensocial.googleusercontent.com
+64.233.167.132  images8-esmobile-opensocial.googleusercontent.com
+64.233.167.132  images9-esmobile-opensocial.googleusercontent.com
+64.233.167.132  images-docs-opensocial.googleusercontent.com
+64.233.167.132  images-oz-opensocial.googleusercontent.com
+64.233.167.132  images-lso-opensocial.googleusercontent.com
+64.233.167.132  images-blogger-opensocial.googleusercontent.com
+64.233.167.132  images-pos-opensocial.googleusercontent.com
+64.233.167.132  lh0.googleusercontent.com
+64.233.167.132  lh1.googleusercontent.com
+64.233.167.132  lh2.googleusercontent.com
+64.233.167.132  lh3.googleusercontent.com
+64.233.167.132  lh4.googleusercontent.com
+64.233.167.132  lh5.googleusercontent.com
+64.233.167.132  lh6.googleusercontent.com
+210.242.125.118 gp1.googleusercontent.com
+210.242.125.118 gp2.googleusercontent.com
+210.242.125.118 gp3.googleusercontent.com
+210.242.125.118 gp4.googleusercontent.com
+210.242.125.118 gp5.googleusercontent.com
+210.242.125.118 gp6.googleusercontent.com
+64.233.167.132  lh0.ggpht.com
+64.233.167.132  lh1.ggpht.com
+64.233.167.132  lh2.ggpht.com
+64.233.167.132  lh3.ggpht.com
+64.233.167.132  lh4.ggpht.com
+64.233.167.132  lh5.ggpht.com
+64.233.167.132  lh6.ggpht.com
+64.233.167.132  nt0.ggpht.com
+64.233.167.132  nt1.ggpht.com
+64.233.167.132  nt2.ggpht.com
+64.233.167.132  nt3.ggpht.com
+64.233.167.132  nt4.ggpht.com
+64.233.167.132  nt5.ggpht.com
+64.233.167.132  nt6.ggpht.com
+64.233.167.132  yt0.ggpht.com
+64.233.167.132  yt1.ggpht.com
+64.233.167.132  yt2.ggpht.com
+64.233.167.132  yt3.ggpht.com
+64.233.167.132  yt4.ggpht.com
+64.233.167.132  yt5.ggpht.com
+64.233.167.132  yt6.ggpht.com
+64.233.167.132  gm0.ggpht.com
+64.233.167.132  gm1.ggpht.com
+64.233.167.132  gm2.ggpht.com
+64.233.167.132  gm3.ggpht.com
+64.233.167.132  gm4.ggpht.com
+64.233.167.132  gm5.ggpht.com
+64.233.167.132  gm6.ggpht.com
+64.233.167.132  geo0.ggpht.com
+64.233.167.132  geo1.ggpht.com
+64.233.167.132  geo2.ggpht.com
+64.233.167.132  geo3.ggpht.com
+64.233.167.132  geo4.ggpht.com
+64.233.167.132  geo5.ggpht.com
+64.233.167.132  geo6.ggpht.com
+64.233.167.132  ci1.googleusercontent.com
+64.233.167.132  ci2.googleusercontent.com
+64.233.167.132  ci3.googleusercontent.com
+64.233.167.132  ci4.googleusercontent.com
+64.233.167.132  ci5.googleusercontent.com
+64.233.167.132  ci6.googleusercontent.com
+64.233.167.132  s1.googleusercontent.com
+64.233.167.132  s2.googleusercontent.com
+64.233.167.132  s3.googleusercontent.com
+64.233.167.132  s4.googleusercontent.com
+64.233.167.132  s5.googleusercontent.com
+64.233.167.132  s6.googleusercontent.com
+64.233.167.133  sp0.googleusercontent.com
+64.233.167.133  sp1.googleusercontent.com
+64.233.167.133  sp2.googleusercontent.com
+64.233.167.133  sp3.googleusercontent.com
+64.233.167.133  sp4.googleusercontent.com
+64.233.167.133  sp5.googleusercontent.com
+64.233.167.133  sp6.googleusercontent.com
+64.233.167.133  sp7.googleusercontent.com
+64.233.167.133  sp8.googleusercontent.com
+64.233.167.133  sp9.googleusercontent.com
 #Googleusercontent↑
 #Gstatic↓
-64.233.166.94 www.gstatic.com
-64.233.166.94 ssl.gstatic.com
-64.233.166.120  csi.gstatic.com
-64.233.166.94 csi.l.google.com
-64.233.166.120  maps.gstatic.com
-64.233.166.120  fonts.gstatic.com
-64.233.166.120  encrypted-tbn0.gstatic.com
-64.233.166.120  encrypted-tbn1.gstatic.com
-64.233.166.120  encrypted-tbn2.gstatic.com
-64.233.166.120  encrypted-tbn3.gstatic.com
-64.233.166.120  encrypted-tbn4.gstatic.com
-64.233.166.120  encrypted-tbn5.gstatic.com
-64.233.166.120  encrypted-tbn6.gstatic.com
-64.233.166.120  g0.gstatic.com
-64.233.166.120  g1.gstatic.com
-64.233.166.120  g2.gstatic.com
-64.233.166.120  g3.gstatic.com
-64.233.166.120  g4.gstatic.com
-64.233.166.120  g5.gstatic.com
-64.233.166.120  g6.gstatic.com
-64.233.166.120  g7.gstatic.com
-210.242.125.114 mt0.gstatic.com
-210.242.125.114 mt1.gstatic.com
-210.242.125.114 mt2.gstatic.com
-210.242.125.114 mt3.gstatic.com
-210.242.125.114 mt4.gstatic.com
-210.242.125.114 mt5.gstatic.com
-210.242.125.114 mt6.gstatic.com
-210.242.125.114 mt7.gstatic.com
-210.242.125.114 t0.gstatic.com
-210.242.125.114 t1.gstatic.com
-210.242.125.114 t2.gstatic.com
-210.242.125.114 t3.gstatic.com
-210.242.125.114 t4.gstatic.com
-210.242.125.114 t5.gstatic.com
-210.242.125.114 t6.gstatic.com
-210.242.125.114 t7.gstatic.com
+64.233.167.94 www.gstatic.com
+64.233.167.94 ssl.gstatic.com
+64.233.167.120  csi.gstatic.com
+64.233.167.94 csi.l.google.com
+64.233.167.120  maps.gstatic.com
+64.233.167.120  fonts.gstatic.com
+64.233.167.120  encrypted-tbn0.gstatic.com
+64.233.167.120  encrypted-tbn1.gstatic.com
+64.233.167.120  encrypted-tbn2.gstatic.com
+64.233.167.120  encrypted-tbn3.gstatic.com
+64.233.167.120  encrypted-tbn4.gstatic.com
+64.233.167.120  encrypted-tbn5.gstatic.com
+64.233.167.120  encrypted-tbn6.gstatic.com
+64.233.167.120  g0.gstatic.com
+64.233.167.120  g1.gstatic.com
+64.233.167.120  g2.gstatic.com
+64.233.167.120  g3.gstatic.com
+64.233.167.120  g4.gstatic.com
+64.233.167.120  g5.gstatic.com
+64.233.167.120  g6.gstatic.com
+64.233.167.120  g7.gstatic.com
+210.242.125.118 mt0.gstatic.com
+210.242.125.118 mt1.gstatic.com
+210.242.125.118 mt2.gstatic.com
+210.242.125.118 mt3.gstatic.com
+210.242.125.118 mt4.gstatic.com
+210.242.125.118 mt5.gstatic.com
+210.242.125.118 mt6.gstatic.com
+210.242.125.118 mt7.gstatic.com
+210.242.125.118 t0.gstatic.com
+210.242.125.118 t1.gstatic.com
+210.242.125.118 t2.gstatic.com
+210.242.125.118 t3.gstatic.com
+210.242.125.118 t4.gstatic.com
+210.242.125.118 t5.gstatic.com
+210.242.125.118 t6.gstatic.com
+210.242.125.118 t7.gstatic.com
 #Gstatic↑
 #Google other↓
-64.233.166.189  mail.google.com
-64.233.166.189  isolated.mail.google.com
-64.233.166.101  history.google.com
-64.233.166.112  adwords.google.com
-64.233.166.100  apis.google.com
-64.233.166.100  talkgadget.google.com
-64.233.166.192  supl.google.com
-64.233.166.121  www.gwtproject.org
-64.233.166.82 www.googlesource.com
-64.233.166.82 googlesource.com
-64.233.166.82 android.googlesource.com
-64.233.166.82 chromium.googlesource.com
-64.233.166.82 gerrit.googlesource.com
-64.233.166.82 kernel.googlesource.com
-64.233.166.82 gwt.googlesource.com
-64.233.166.189  0.talkgadget.google.com
-64.233.166.189  chromoting-host.talkgadget.google.com
-64.233.166.189  chromoting-oauth.talkgadget.google.com
-64.233.166.189  chromoting-client.talkgadget.google.com
-64.233.166.189  wildcard-talkgadget.l.google.com
-74.125.207.191  www.blogger.com
-64.233.166.132  google-opensource.blogspot.com
-64.233.166.132  googleblog.blogspot.com
-64.233.166.132  googlechinablog.blogspot.com
-64.233.166.132  googlechromereleases.blogspot.com
-64.233.166.132  magnifier.blogspot.com
-64.233.166.132  1.bp.blogspot.com
-64.233.166.132  2.bp.blogspot.com
-64.233.166.132  3.bp.blogspot.com
-64.233.166.132  4.bp.blogspot.com
-74.125.233.127  stun.l.google.com
-74.125.233.127  alt1.stun.l.google.com
-74.125.233.127  alt2.stun.l.google.com
-74.125.233.127  alt3.stun.l.google.com
-74.125.233.127  alt4.stun.l.google.com
-74.125.233.127  alt5.stun.l.google.com
+74.125.202.17 mail.google.com
+74.125.202.17 isolated.mail.google.com
+64.233.167.101  history.google.com
+64.233.167.112  adwords.google.com
+64.233.185.113  chart.apis.google.com
+64.233.185.100  apis.google.com
+64.233.185.100  talkgadget.google.com
+64.233.167.192  supl.google.com
+64.233.167.121  www.gwtproject.org
+64.233.167.82 www.googlesource.com
+64.233.167.82 googlesource.com
+64.233.167.82 android.googlesource.com
+64.233.167.82 chromium.googlesource.com
+64.233.167.82 gerrit.googlesource.com
+64.233.167.82 kernel.googlesource.com
+64.233.167.82 gwt.googlesource.com
+64.233.167.189  0.talkgadget.google.com
+64.233.167.189  chromoting-host.talkgadget.google.com
+64.233.167.189  chromoting-oauth.talkgadget.google.com
+64.233.167.189  chromoting-client.talkgadget.google.com
+64.233.167.189  wildcard-talkgadget.l.google.com
+74.125.202.191  www.blogger.com
+64.233.167.132  google-opensource.blogspot.com
+64.233.167.132  googleblog.blogspot.com
+64.233.167.132  googlechinablog.blogspot.com
+64.233.167.132  googlechromereleases.blogspot.com
+64.233.167.132  magnifier.blogspot.com
+64.233.167.132  1.bp.blogspot.com
+64.233.167.132  2.bp.blogspot.com
+64.233.167.132  3.bp.blogspot.com
+64.233.167.132  4.bp.blogspot.com
+74.125.229.127  stun.l.google.com
+74.125.229.127  alt1.stun.l.google.com
+74.125.229.127  alt2.stun.l.google.com
+74.125.229.127  alt3.stun.l.google.com
+74.125.229.127  alt4.stun.l.google.com
+74.125.229.127  alt5.stun.l.google.com
 #74.125.230.121 www.chromium.org
 #74.125.230.121 chromium.org
 #74.125.230.121 codereview.chromium.org
 #74.125.230.121 dev.chromium.org
-#210.242.125.114  mobile.l.google.com
-#210.242.125.114  mobile-gtalk.l.google.com
-210.242.125.114 plus.google.com
-210.242.125.114 plus.url.google.com
-210.242.125.114 plusone.google.com
-210.242.125.114 play.google.com
-210.242.125.114 keep.google.com
-210.242.125.114 relay.google.com
-210.242.125.114 safebrowsing.cache.l.google.com
-210.242.125.114 safebrowsing.clients.google.com
-210.242.125.114 safebrowsing.google.com
-210.242.125.114 safebrowsing-cache.google.com
-210.242.125.114 www.android.com
-210.242.125.114 android.com
-210.242.125.114 developer.android.com
-210.242.125.114 market.android.com
-210.242.125.114 source.android.com
-210.242.125.114 wallet.google.com
-210.242.125.114 answers.google.com
-210.242.125.114 admin.google.com
-210.242.125.114 chart.apis.google.com
-210.242.125.114 appengine.google.com
-210.242.125.114 apps.google.com
-210.242.125.114 appspot.l.google.com
-210.242.125.114 bks0.books.google.com
-210.242.125.114 bks1.books.google.com
-210.242.125.114 bks2.books.google.com
-210.242.125.114 bks3.books.google.com
-210.242.125.114 bks4.books.google.com
-210.242.125.114 bks5.books.google.com
-210.242.125.114 bks6.books.google.com
-210.242.125.114 bks7.books.google.com
-210.242.125.114 bks8.books.google.com
-210.242.125.114 bks9.books.google.com
-210.242.125.114 bks10.books.google.com
-210.242.125.114 blogsearch.google.com
-210.242.125.114 books.google.com
-210.242.125.114 browserchannel-docs.l.google.com
-210.242.125.114 browserchannel-spreadsheets.l.google.com
-210.242.125.114 browsersync.google.com
-210.242.125.114 browsersync.l.google.com
-210.242.125.114 buzz.google.com
-210.242.125.114 cache.l.google.com
-210.242.125.114 cache.pack.google.com
-210.242.125.114 calENDar.google.com
-210.242.125.114 cbk0.google.com
-210.242.125.114 cbk1.google.com
-210.242.125.114 cbk2.google.com
-210.242.125.114 cbk3.google.com
-210.242.125.114 cbks0.google.com
-210.242.125.114 cbks1.google.com
-210.242.125.114 cbks2.google.com
-210.242.125.114 cbks3.google.com
-210.242.125.114 chatenabled.mail.google.com
-210.242.125.114 checkout.google.com
-210.242.125.114 checkout.l.google.com
-210.242.125.114 chrome.google.com
-210.242.125.114 code.google.com
-210.242.125.114 code.l.google.com
-210.242.125.114 desktop.google.com
-210.242.125.114 desktop.l.google.com
-210.242.125.114 desktop2.google.com
-210.242.125.114 developers.google.com
-210.242.125.114 ditu.google.com
-210.242.125.114 dl.google.com
-210.242.125.114 dl.l.google.com
-210.242.125.114 dl-ssl.google.com
-210.242.125.114 domains.google.com
-210.242.125.114 earth.google.com
-210.242.125.114 encrypted.google.com
-210.242.125.114 encrypted-tbn.l.google.com
-210.242.125.114 encrypted-tbn0.google.com
-210.242.125.114 encrypted-tbn1.google.com
-210.242.125.114 encrypted-tbn2.google.com
-210.242.125.114 encrypted-tbn3.google.com
-210.242.125.114 feedburner.google.com
-210.242.125.114 feedproxy.google.com
-210.242.125.114 filetransferenabled.mail.google.com
-210.242.125.114 finance.google.com
-210.242.125.114 fusion.google.com
-210.242.125.114 geoauth.google.com
-210.242.125.114 gg.google.com
-210.242.125.114 ghs.google.com
-210.242.125.114 ghs.l.google.com
-210.242.125.114 ghs46.google.com
-210.242.125.114 ghs46.l.google.com
-210.242.125.114 google.com
-210.242.125.114 googlecode.l.google.com
-210.242.125.114 google-public-dns-a.google.com
-210.242.125.114 google-public-dns-b.google.com
-210.242.125.114 goto.google.com
-210.242.125.114 groups.google.com
-210.242.125.114 groups.l.google.com
-210.242.125.114 groups-beta.google.com
-210.242.125.114 gxc.google.com
-210.242.125.114 id.google.com
-210.242.125.114 id.l.google.com
-210.242.125.114 image.google.com
-210.242.125.114 images.google.com
-210.242.125.114 images.l.google.com
-210.242.125.114 investor.google.com
-210.242.125.114 jmt0.google.com
-210.242.125.114 kh.google.com
-210.242.125.114 kh.l.google.com
-210.242.125.114 khm.google.com
-210.242.125.114 khm.l.google.com
-210.242.125.114 khm0.google.com
-210.242.125.114 khm1.google.com
-210.242.125.114 khm2.google.com
-210.242.125.114 khm3.google.com
-210.242.125.114 khmdb.google.com
-210.242.125.114 khms.google.com
-210.242.125.114 khms.l.google.com
-210.242.125.114 khms0.google.com
-210.242.125.114 khms1.google.com
-210.242.125.114 khms2.google.com
-210.242.125.114 khms3.google.com
-210.242.125.114 labs.google.com
-210.242.125.114 large-uploads.l.google.com
-210.242.125.114 lh2.google.com
-210.242.125.114 lh2.l.google.com
-210.242.125.114 lh3.google.com
-210.242.125.114 lh4.google.com
-210.242.125.114 lh5.google.com
-210.242.125.114 lh6.google.com
-210.242.125.114 linkhelp.clients.google.com
-210.242.125.114 local.google.com
-210.242.125.114 m.google.com
-210.242.125.114 map.google.com
-210.242.125.114 maps.google.com
-210.242.125.114 maps.l.google.com
-210.242.125.114 maps-api-ssl.google.com
-210.242.125.114 mapsengine.google.com
-210.242.125.114 mars.google.com
-210.242.125.114 mobilemaps.clients.google.com
-210.242.125.114 mt.google.com
-210.242.125.114 mt.l.google.com
-210.242.125.114 mt0.google.com
-210.242.125.114 mt1.google.com
-210.242.125.114 mt2.google.com
-210.242.125.114 mt3.google.com
-210.242.125.114 mts.google.com
-210.242.125.114 mts.l.google.com
-210.242.125.114 mts0.google.com
-210.242.125.114 mts1.google.com
-210.242.125.114 mts2.google.com
-210.242.125.114 mts3.google.com
-210.242.125.114 music.google.com
-210.242.125.114 music-streaming.l.google.com
-210.242.125.114 mw1.google.com
-210.242.125.114 mw2.google.com
-210.242.125.114 news.google.com
-210.242.125.114 news.l.google.com
-210.242.125.114 pack.google.com
-210.242.125.114 photos.google.com
-210.242.125.114 photos-ugc.l.google.com
-210.242.125.114 picasa.google.com
-210.242.125.114 picasaweb.google.com
-210.242.125.114 picasaweb.l.google.com
-210.242.125.114 places.google.com
-210.242.125.114 productforums.google.com
-210.242.125.114 profiles.google.com
-210.242.125.114 reader.google.com
-210.242.125.114 sandbox.google.com
-210.242.125.114 sb.google.com
-210.242.125.114 sb.l.google.com
-210.242.125.114 sb-ssl.google.com
-210.242.125.114 sb-ssl.l.google.com
-210.242.125.114 scholar.google.com
-210.242.125.114 scholar.l.google.com
-210.242.125.114 script.google.com
-210.242.125.114 security.google.com
-210.242.125.114 services.google.com
-210.242.125.114 sites.google.com
-210.242.125.114 sketchup.google.com
-210.242.125.114 sketchup.l.google.com
-210.242.125.114 spreadsheet.google.com
-210.242.125.114 spreadsheets.google.com
-210.242.125.114 spreadsheets.l.google.com
-210.242.125.114 spreadsheets0.google.com
-210.242.125.114 spreadsheets1.google.com
-210.242.125.114 spreadsheets2.google.com
-210.242.125.114 spreadsheets3.google.com
-210.242.125.114 spreadsheets4.google.com
-210.242.125.114 spreadsheets5.google.com
-210.242.125.114 spreadsheets6.google.com
-210.242.125.114 spreadsheets7.google.com
-210.242.125.114 spreadsheets8.google.com
-210.242.125.114 spreadsheets9.google.com
-210.242.125.114 spreadsheets-china.l.google.com
-210.242.125.114 suggestqueries.google.com
-210.242.125.114 suggestqueries.l.google.com
-210.242.125.114 support.google.com
-210.242.125.114 tbn0.google.com
-210.242.125.114 tbn1.google.com
-210.242.125.114 tbn2.google.com
-210.242.125.114 tbn3.google.com
-210.242.125.114 toolbar.google.com
-210.242.125.114 toolbarqueries.clients.google.com
-210.242.125.114 toolbarqueries.google.com
-210.242.125.114 toolbarqueries.l.google.com
-210.242.125.114 tools.google.com
-210.242.125.114 tools.l.google.com
-210.242.125.114 translate.google.com
-210.242.125.114 trENDs.google.com
-210.242.125.114 video.google.com
-210.242.125.114 video-stats.l.google.com
-210.242.125.114 voice.google.com
-210.242.125.114 wifi.google.com
-210.242.125.114 wifi.l.google.com
-210.242.125.114 wire.l.google.com
-210.242.125.114 writely.google.com
-210.242.125.114 writely.l.google.com
-210.242.125.114 writely-china.l.google.com
-210.242.125.114 writely-com.l.google.com
-210.242.125.114 www.l.google.com
-210.242.125.114 www2.l.google.com
-210.242.125.114 www3.l.google.com
-210.242.125.114 www4.l.google.com
-210.242.125.114 ytstatic.l.google.com
-210.242.125.114 autoproxy-gfwlist.googlecode.com
-210.242.125.114 chromium.googlecode.com
-210.242.125.114 closure-library.googlecode.com
-210.242.125.114 earth-api-samples.googlecode.com
-210.242.125.114 gmaps-samples-flash.googlecode.com
-210.242.125.114 goagent.googlecode.com
-210.242.125.114 google-code-feed-gadget.googlecode.com
-210.242.125.114 imoutohost.googlecode.com
-210.242.125.114 smarthosts.googlecode.com
-210.242.125.114 huhamhire-hosts.googlecode.com
-210.242.125.114 haoutil.googlecode.com
-210.242.125.114 blogsearch.google.cn
-210.242.125.114 g.cn
-210.242.125.114 www.g.cn
-210.242.125.114 ditu.google.cn
-210.242.125.114 maps.google.cn
-210.242.125.114 gg.google.cn
-210.242.125.114 id.google.cn
-210.242.125.114 maps.gstatic.cn
-210.242.125.114 m.google.cn
-210.242.125.114 mt.google.cn
-210.242.125.114 mt0.google.cn
-210.242.125.114 mt1.google.cn
-210.242.125.114 mt2.google.cn
-210.242.125.114 mt3.google.cn
-210.242.125.114 news.google.cn
-210.242.125.114 scholar.google.cn
-210.242.125.114 translate.google.cn
-210.242.125.114 www.google.cn
-210.242.125.114 www.gstatic.cn
-210.242.125.114 accounts.google.com.hk
-210.242.125.114 blogsearch.google.com.hk
-210.242.125.114 books.google.com.hk
-210.242.125.114 clients1.google.com.hk
-210.242.125.114 desktop.google.com.hk
-210.242.125.114 encrypted.google.com.hk
-210.242.125.114 groups.google.com.hk
-210.242.125.114 gxc.google.com.hk
-210.242.125.114 id.google.com.hk
-210.242.125.114 images.google.com.hk
-#210.242.125.114  m.google.com.hk
-210.242.125.114 maps.google.com.hk
-210.242.125.114 news.google.com.hk
-210.242.125.114 picasaweb.google.com.hk
-210.242.125.114 plus.url.google.com.hk
-210.242.125.114 scholar.google.com.hk
-210.242.125.114 toolbar.google.com.hk
-210.242.125.114 toolbarqueries.google.com.hk
-210.242.125.114 translate.google.com.hk
-210.242.125.114 wENDa.google.com.hk
-210.242.125.114 www.google.com.hk
-210.242.125.114 accounts.google.com.tw
-210.242.125.114 blogsearch.google.com.tw
-210.242.125.114 books.google.com.tw
-210.242.125.114 clients1.google.com.tw
-210.242.125.114 desktop.google.com.tw
-210.242.125.114 encrypted.google.com.tw
-210.242.125.114 groups.google.com.tw
-210.242.125.114 gxc.google.com.tw
-210.242.125.114 id.google.com.tw
-210.242.125.114 images.google.com.tw
-#210.242.125.114  m.google.com.tw
-210.242.125.114 maps.google.com.tw
-210.242.125.114 news.google.com.tw
-210.242.125.114 picasaweb.google.com.tw
-210.242.125.114 plus.url.google.com.tw
-210.242.125.114 scholar.google.com.tw
-210.242.125.114 toolbar.google.com.tw
-210.242.125.114 toolbarqueries.google.com.tw
-210.242.125.114 translate.google.com.tw
-210.242.125.114 www.google.com.tw
-210.242.125.114 accounts.google.com.sg
-210.242.125.114 blogsearch.google.com.sg
-210.242.125.114 books.google.com.sg
-210.242.125.114 clients1.google.com.sg
-210.242.125.114 desktop.google.com.sg
-210.242.125.114 encrypted.google.com.sg
-210.242.125.114 groups.google.com.sg
-210.242.125.114 gxc.google.com.sg
-210.242.125.114 id.google.com.sg
-210.242.125.114 images.google.com.sg
-#210.242.125.114  m.google.com.sg
-210.242.125.114 maps.google.com.sg
-210.242.125.114 news.google.com.sg
-210.242.125.114 picasaweb.google.com.sg
-210.242.125.114 plus.url.google.com.sg
-210.242.125.114 scholar.google.com.sg
-210.242.125.114 toolbar.google.com.sg
-210.242.125.114 toolbarqueries.google.com.sg
-210.242.125.114 translate.google.com.sg
-210.242.125.114 www.google.com.sg
-210.242.125.114 accounts.google.co.jp
-210.242.125.114 blogsearch.google.co.jp
-210.242.125.114 books.google.co.jp
-210.242.125.114 clients1.google.co.jp
-210.242.125.114 desktop.google.co.jp
-210.242.125.114 encrypted.google.co.jp
-210.242.125.114 groups.google.co.jp
-210.242.125.114 gxc.google.com.co.jp
-210.242.125.114 id.google.com.co.jp
-210.242.125.114 images.google.co.jp
-#210.242.125.114  m.google.com.co.jp
-210.242.125.114 maps.google.co.jp
-210.242.125.114 news.google.co.jp
-210.242.125.114 picasaweb.google.co.jp
-210.242.125.114 plus.url.google.co.jp
-210.242.125.114 scholar.google.co.jp
-210.242.125.114 toolbar.google.co.jp
-210.242.125.114 toolbarqueries.google.co.jp
-210.242.125.114 translate.google.co.jp
-210.242.125.114 www.google.co.jp
-210.242.125.114 android.googlesource.com
-210.242.125.114 auth.keyhole.com
-210.242.125.114 chrome.angrybirds.com
-210.242.125.114 developer.chrome.com
-210.242.125.114 domains.googlesyndication.com
-210.242.125.114 earthengine.googlelabs.com
-210.242.125.114 g.co
-210.242.125.114 gmail.com
-210.242.125.114 goo.gl
-210.242.125.114 listen.googlelabs.com
-210.242.125.114 m.gmail.com
-210.242.125.114 m.googlemail.com
-210.242.125.114 ngrams.googlelabs.com
-210.242.125.114 ssl.google-analytics.com
-210.242.125.114 www.gmail.com
-210.242.125.114 www.googleadservices.com
-210.242.125.114 www.google-analytics.com
-#210.242.125.114  www-google-analytics.l.google.com
-210.242.125.114 www.googlelabs.com
-210.242.125.114 www.googlesource.com
-210.242.125.114 chatenabled.mail.google.com
-210.242.125.114 panoramio.com
-210.242.125.114 www.panoramio.com
-210.242.125.114 static.panoramio.com
-210.242.125.114 www.webmproject.org
-210.242.125.114 golang.org
-210.242.125.114 play.golang.org
-210.242.125.114 feeds.feedburner.com
+#210.242.125.118  mobile.l.google.com
+#210.242.125.118  mobile-gtalk.l.google.com
+210.242.125.118 plus.google.com
+210.242.125.118 plus.url.google.com
+210.242.125.118 plusone.google.com
+210.242.125.118 play.google.com
+210.242.125.118 keep.google.com
+210.242.125.118 relay.google.com
+210.242.125.118 safebrowsing.cache.l.google.com
+210.242.125.118 safebrowsing.clients.google.com
+210.242.125.118 safebrowsing.google.com
+210.242.125.118 safebrowsing-cache.google.com
+210.242.125.118 www.android.com
+210.242.125.118 android.com
+210.242.125.118 developer.android.com
+210.242.125.118 market.android.com
+210.242.125.118 source.android.com
+210.242.125.118 wallet.google.com
+210.242.125.118 answers.google.com
+210.242.125.118 admin.google.com
+210.242.125.118 appengine.google.com
+210.242.125.118 apps.google.com
+210.242.125.118 appspot.l.google.com
+210.242.125.118 bks0.books.google.com
+210.242.125.118 bks1.books.google.com
+210.242.125.118 bks2.books.google.com
+210.242.125.118 bks3.books.google.com
+210.242.125.118 bks4.books.google.com
+210.242.125.118 bks5.books.google.com
+210.242.125.118 bks6.books.google.com
+210.242.125.118 bks7.books.google.com
+210.242.125.118 bks8.books.google.com
+210.242.125.118 bks9.books.google.com
+210.242.125.118 bks10.books.google.com
+210.242.125.118 blogsearch.google.com
+210.242.125.118 books.google.com
+210.242.125.118 browserchannel-docs.l.google.com
+210.242.125.118 browserchannel-spreadsheets.l.google.com
+210.242.125.118 browsersync.google.com
+210.242.125.118 browsersync.l.google.com
+210.242.125.118 buzz.google.com
+210.242.125.118 cache.l.google.com
+210.242.125.118 cache.pack.google.com
+210.242.125.118 calENDar.google.com
+210.242.125.118 cbk0.google.com
+210.242.125.118 cbk1.google.com
+210.242.125.118 cbk2.google.com
+210.242.125.118 cbk3.google.com
+210.242.125.118 cbks0.google.com
+210.242.125.118 cbks1.google.com
+210.242.125.118 cbks2.google.com
+210.242.125.118 cbks3.google.com
+210.242.125.118 chatenabled.mail.google.com
+210.242.125.118 checkout.google.com
+210.242.125.118 checkout.l.google.com
+210.242.125.118 chrome.google.com
+210.242.125.118 code.google.com
+210.242.125.118 code.l.google.com
+210.242.125.118 desktop.google.com
+210.242.125.118 desktop.l.google.com
+210.242.125.118 desktop2.google.com
+210.242.125.118 developers.google.com
+210.242.125.118 ditu.google.com
+210.242.125.118 dl.google.com
+210.242.125.118 dl.l.google.com
+210.242.125.118 dl-ssl.google.com
+210.242.125.118 domains.google.com
+210.242.125.118 earth.google.com
+210.242.125.118 encrypted.google.com
+210.242.125.118 encrypted-tbn.l.google.com
+210.242.125.118 encrypted-tbn0.google.com
+210.242.125.118 encrypted-tbn1.google.com
+210.242.125.118 encrypted-tbn2.google.com
+210.242.125.118 encrypted-tbn3.google.com
+210.242.125.118 feedburner.google.com
+210.242.125.118 feedproxy.google.com
+210.242.125.118 filetransferenabled.mail.google.com
+210.242.125.118 finance.google.com
+210.242.125.118 fusion.google.com
+210.242.125.118 geoauth.google.com
+210.242.125.118 gg.google.com
+210.242.125.118 ghs.google.com
+210.242.125.118 ghs.l.google.com
+210.242.125.118 ghs46.google.com
+210.242.125.118 ghs46.l.google.com
+210.242.125.118 google.com
+210.242.125.118 googlecode.l.google.com
+210.242.125.118 google-public-dns-a.google.com
+210.242.125.118 google-public-dns-b.google.com
+210.242.125.118 goto.google.com
+210.242.125.118 groups.google.com
+210.242.125.118 groups.l.google.com
+210.242.125.118 groups-beta.google.com
+210.242.125.118 gxc.google.com
+210.242.125.118 id.google.com
+210.242.125.118 id.l.google.com
+210.242.125.118 image.google.com
+210.242.125.118 images.google.com
+210.242.125.118 images.l.google.com
+210.242.125.118 investor.google.com
+210.242.125.118 jmt0.google.com
+210.242.125.118 kh.google.com
+210.242.125.118 kh.l.google.com
+210.242.125.118 khm.google.com
+210.242.125.118 khm.l.google.com
+210.242.125.118 khm0.google.com
+210.242.125.118 khm1.google.com
+210.242.125.118 khm2.google.com
+210.242.125.118 khm3.google.com
+210.242.125.118 khmdb.google.com
+210.242.125.118 khms.google.com
+210.242.125.118 khms.l.google.com
+210.242.125.118 khms0.google.com
+210.242.125.118 khms1.google.com
+210.242.125.118 khms2.google.com
+210.242.125.118 khms3.google.com
+210.242.125.118 labs.google.com
+210.242.125.118 large-uploads.l.google.com
+210.242.125.118 lh2.google.com
+210.242.125.118 lh2.l.google.com
+210.242.125.118 lh3.google.com
+210.242.125.118 lh4.google.com
+210.242.125.118 lh5.google.com
+210.242.125.118 lh6.google.com
+210.242.125.118 linkhelp.clients.google.com
+210.242.125.118 local.google.com
+210.242.125.118 m.google.com
+210.242.125.118 map.google.com
+210.242.125.118 maps.google.com
+210.242.125.118 maps.l.google.com
+210.242.125.118 maps-api-ssl.google.com
+210.242.125.118 mapsengine.google.com
+210.242.125.118 mars.google.com
+210.242.125.118 mobilemaps.clients.google.com
+210.242.125.118 mt.google.com
+210.242.125.118 mt.l.google.com
+210.242.125.118 mt0.google.com
+210.242.125.118 mt1.google.com
+210.242.125.118 mt2.google.com
+210.242.125.118 mt3.google.com
+210.242.125.118 mts.google.com
+210.242.125.118 mts.l.google.com
+210.242.125.118 mts0.google.com
+210.242.125.118 mts1.google.com
+210.242.125.118 mts2.google.com
+210.242.125.118 mts3.google.com
+210.242.125.118 music.google.com
+210.242.125.118 music-streaming.l.google.com
+210.242.125.118 mw1.google.com
+210.242.125.118 mw2.google.com
+210.242.125.118 news.google.com
+210.242.125.118 news.l.google.com
+210.242.125.118 pack.google.com
+210.242.125.118 photos.google.com
+210.242.125.118 photos-ugc.l.google.com
+210.242.125.118 picasa.google.com
+210.242.125.118 picasaweb.google.com
+210.242.125.118 picasaweb.l.google.com
+210.242.125.118 places.google.com
+210.242.125.118 productforums.google.com
+210.242.125.118 profiles.google.com
+210.242.125.118 reader.google.com
+210.242.125.118 sandbox.google.com
+210.242.125.118 sb.google.com
+210.242.125.118 sb.l.google.com
+210.242.125.118 sb-ssl.google.com
+210.242.125.118 sb-ssl.l.google.com
+210.242.125.118 scholar.google.com
+210.242.125.118 scholar.l.google.com
+210.242.125.118 script.google.com
+210.242.125.118 security.google.com
+210.242.125.118 services.google.com
+210.242.125.118 sites.google.com
+210.242.125.118 sketchup.google.com
+210.242.125.118 sketchup.l.google.com
+210.242.125.118 spreadsheet.google.com
+210.242.125.118 spreadsheets.google.com
+210.242.125.118 spreadsheets.l.google.com
+210.242.125.118 spreadsheets0.google.com
+210.242.125.118 spreadsheets1.google.com
+210.242.125.118 spreadsheets2.google.com
+210.242.125.118 spreadsheets3.google.com
+210.242.125.118 spreadsheets4.google.com
+210.242.125.118 spreadsheets5.google.com
+210.242.125.118 spreadsheets6.google.com
+210.242.125.118 spreadsheets7.google.com
+210.242.125.118 spreadsheets8.google.com
+210.242.125.118 spreadsheets9.google.com
+210.242.125.118 spreadsheets-china.l.google.com
+210.242.125.118 suggestqueries.google.com
+210.242.125.118 suggestqueries.l.google.com
+210.242.125.118 support.google.com
+210.242.125.118 tbn0.google.com
+210.242.125.118 tbn1.google.com
+210.242.125.118 tbn2.google.com
+210.242.125.118 tbn3.google.com
+210.242.125.118 toolbar.google.com
+210.242.125.118 toolbarqueries.clients.google.com
+210.242.125.118 toolbarqueries.google.com
+210.242.125.118 toolbarqueries.l.google.com
+210.242.125.118 tools.google.com
+210.242.125.118 tools.l.google.com
+210.242.125.118 translate.google.com
+210.242.125.118 trENDs.google.com
+210.242.125.118 video.google.com
+210.242.125.118 video-stats.l.google.com
+210.242.125.118 voice.google.com
+210.242.125.118 wifi.google.com
+210.242.125.118 wifi.l.google.com
+210.242.125.118 wire.l.google.com
+210.242.125.118 writely.google.com
+210.242.125.118 writely.l.google.com
+210.242.125.118 writely-china.l.google.com
+210.242.125.118 writely-com.l.google.com
+210.242.125.118 www.l.google.com
+210.242.125.118 www2.l.google.com
+210.242.125.118 www3.l.google.com
+210.242.125.118 www4.l.google.com
+210.242.125.118 ytstatic.l.google.com
+210.242.125.118 autoproxy-gfwlist.googlecode.com
+210.242.125.118 chromium.googlecode.com
+210.242.125.118 closure-library.googlecode.com
+210.242.125.118 earth-api-samples.googlecode.com
+210.242.125.118 gmaps-samples-flash.googlecode.com
+210.242.125.118 goagent.googlecode.com
+210.242.125.118 google-code-feed-gadget.googlecode.com
+210.242.125.118 imoutohost.googlecode.com
+210.242.125.118 smarthosts.googlecode.com
+210.242.125.118 huhamhire-hosts.googlecode.com
+210.242.125.118 haoutil.googlecode.com
+210.242.125.118 blogsearch.google.cn
+210.242.125.118 g.cn
+210.242.125.118 www.g.cn
+210.242.125.118 ditu.google.cn
+210.242.125.118 maps.google.cn
+210.242.125.118 gg.google.cn
+210.242.125.118 id.google.cn
+210.242.125.118 maps.gstatic.cn
+210.242.125.118 m.google.cn
+210.242.125.118 mt.google.cn
+210.242.125.118 mt0.google.cn
+210.242.125.118 mt1.google.cn
+210.242.125.118 mt2.google.cn
+210.242.125.118 mt3.google.cn
+210.242.125.118 news.google.cn
+210.242.125.118 scholar.google.cn
+210.242.125.118 translate.google.cn
+210.242.125.118 www.google.cn
+210.242.125.118 www.gstatic.cn
+210.242.125.118 accounts.google.com.hk
+210.242.125.118 blogsearch.google.com.hk
+210.242.125.118 books.google.com.hk
+210.242.125.118 clients1.google.com.hk
+210.242.125.118 desktop.google.com.hk
+210.242.125.118 encrypted.google.com.hk
+210.242.125.118 groups.google.com.hk
+210.242.125.118 gxc.google.com.hk
+210.242.125.118 id.google.com.hk
+210.242.125.118 images.google.com.hk
+#210.242.125.118  m.google.com.hk
+210.242.125.118 maps.google.com.hk
+210.242.125.118 news.google.com.hk
+210.242.125.118 picasaweb.google.com.hk
+210.242.125.118 plus.url.google.com.hk
+210.242.125.118 scholar.google.com.hk
+210.242.125.118 toolbar.google.com.hk
+210.242.125.118 toolbarqueries.google.com.hk
+210.242.125.118 translate.google.com.hk
+210.242.125.118 wENDa.google.com.hk
+210.242.125.118 www.google.com.hk
+210.242.125.118 accounts.google.com.tw
+210.242.125.118 blogsearch.google.com.tw
+210.242.125.118 books.google.com.tw
+210.242.125.118 clients1.google.com.tw
+210.242.125.118 desktop.google.com.tw
+210.242.125.118 encrypted.google.com.tw
+210.242.125.118 groups.google.com.tw
+210.242.125.118 gxc.google.com.tw
+210.242.125.118 id.google.com.tw
+210.242.125.118 images.google.com.tw
+#210.242.125.118  m.google.com.tw
+210.242.125.118 maps.google.com.tw
+210.242.125.118 news.google.com.tw
+210.242.125.118 picasaweb.google.com.tw
+210.242.125.118 plus.url.google.com.tw
+210.242.125.118 scholar.google.com.tw
+210.242.125.118 toolbar.google.com.tw
+210.242.125.118 toolbarqueries.google.com.tw
+210.242.125.118 translate.google.com.tw
+210.242.125.118 www.google.com.tw
+210.242.125.118 accounts.google.com.sg
+210.242.125.118 blogsearch.google.com.sg
+210.242.125.118 books.google.com.sg
+210.242.125.118 clients1.google.com.sg
+210.242.125.118 desktop.google.com.sg
+210.242.125.118 encrypted.google.com.sg
+210.242.125.118 groups.google.com.sg
+210.242.125.118 gxc.google.com.sg
+210.242.125.118 id.google.com.sg
+210.242.125.118 images.google.com.sg
+#210.242.125.118  m.google.com.sg
+210.242.125.118 maps.google.com.sg
+210.242.125.118 news.google.com.sg
+210.242.125.118 picasaweb.google.com.sg
+210.242.125.118 plus.url.google.com.sg
+210.242.125.118 scholar.google.com.sg
+210.242.125.118 toolbar.google.com.sg
+210.242.125.118 toolbarqueries.google.com.sg
+210.242.125.118 translate.google.com.sg
+210.242.125.118 www.google.com.sg
+210.242.125.118 accounts.google.co.jp
+210.242.125.118 blogsearch.google.co.jp
+210.242.125.118 books.google.co.jp
+210.242.125.118 clients1.google.co.jp
+210.242.125.118 desktop.google.co.jp
+210.242.125.118 encrypted.google.co.jp
+210.242.125.118 groups.google.co.jp
+210.242.125.118 gxc.google.com.co.jp
+210.242.125.118 id.google.com.co.jp
+210.242.125.118 images.google.co.jp
+#210.242.125.118  m.google.com.co.jp
+210.242.125.118 maps.google.co.jp
+210.242.125.118 news.google.co.jp
+210.242.125.118 picasaweb.google.co.jp
+210.242.125.118 plus.url.google.co.jp
+210.242.125.118 scholar.google.co.jp
+210.242.125.118 toolbar.google.co.jp
+210.242.125.118 toolbarqueries.google.co.jp
+210.242.125.118 translate.google.co.jp
+210.242.125.118 www.google.co.jp
+210.242.125.118 android.googlesource.com
+210.242.125.118 auth.keyhole.com
+210.242.125.118 chrome.angrybirds.com
+210.242.125.118 developer.chrome.com
+210.242.125.118 domains.googlesyndication.com
+210.242.125.118 earthengine.googlelabs.com
+210.242.125.118 g.co
+210.242.125.118 gmail.com
+210.242.125.118 goo.gl
+210.242.125.118 listen.googlelabs.com
+210.242.125.118 m.gmail.com
+210.242.125.118 m.googlemail.com
+210.242.125.118 ngrams.googlelabs.com
+210.242.125.118 ssl.google-analytics.com
+210.242.125.118 www.gmail.com
+210.242.125.118 www.googleadservices.com
+210.242.125.118 www.google-analytics.com
+#210.242.125.118  www-google-analytics.l.google.com
+210.242.125.118 www.googlelabs.com
+210.242.125.118 www.googlesource.com
+210.242.125.118 chatenabled.mail.google.com
+210.242.125.118 panoramio.com
+210.242.125.118 www.panoramio.com
+210.242.125.118 static.panoramio.com
+210.242.125.118 www.webmproject.org
+210.242.125.118 golang.org
+210.242.125.118 play.golang.org
+210.242.125.118 feeds.feedburner.com
 #Google other↑
 #Google Play↓
 #203.208.46.89  r1---sn-a5m7znee.c.android.clients.google.com
