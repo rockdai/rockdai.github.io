@@ -8,91 +8,51 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   <meta name="format-detection" content="telephone=no">
   <title>rockdai.com</title>
-  <script src="http://libs.useso.com/js/json2/20130526/json2.min.js"></script>
-  <script src="http://libs.useso.com/js/jquery/2.1.1/jquery.min.js"></script>
-  <script src="./git_matrix.js"></script>
-  <script src="./matrix_div.js"></script>
 
   <style type="text/css">
     body {
       margin: 0;
       padding: 0;
+      font-family: "Helvetica Neue", Helvetica, sans-serif;
+      font-size: 18px;
+      line-height: 1.2;
+      color: #000;
+      background: #fff;
       -webkit-touch-callout: none;
       -webkit-user-select: none;
       -webkit-tap-highlight-color: transparent;
     }
-    #chart {
-      position: relative;
-      width: 100%;
-      overflow-x: auto;
-      min-height: 140px;
+    a {
+      color: #000;
+      text-decoration: none;
     }
-    .rect:hover {
-      border: 1px groove #000;
+    a:hover {
+      color: #000;
+      text-decoration: underline;
+    }
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    ul li {
+      font-size: 42px;
+      font-weight: bolder;
     }
   </style>
 </head>
 
   <body>
-    <div id="loading">
-      <img src="http://rockdai.u.qiniudn.com/loading.$6839.gif" />
+    <ul>
+      <li><a href="http://blog.rockdai.com" title="http://blog.rockdai.com">blog</a></li>
+      <li><a href="https://github.com/rockdai" title="https://github.com/rockdai">github</a></li>
+      <li><a href="http://weibo.com/rockdai" title="http://weibo.com/rockdai">weibo</a></li>
+    </ul>
+    <div style="visibility: hidden;">
+      <script>
+        var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cspan id='cnzz_stat_icon_1446031'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s5.cnzz.com/stat.php%3Fid%3D1446031' type='text/javascript'%3E%3C/script%3E"));
+      </script>
     </div>
-    <div id="chart"></div>
-    <div id="info"></div>
-    <script>
-      var infoNode = $('#info');
-      var BASE_DATE = new Date('2014-07-01');
-      var textList = ["没能坚持！！", "控制饮食", "控制饮食+稍许运动", "控制饮食+大量运动"];
-      function decodeFromBase64(input) {
-        input = input.replace(/\s/g, '');
-        return atob(input);
-      }
-      function pad(n) {
-        return n < 10 ? '0' + n : '' + n;
-      }
-      function formatDate(date) {
-        var year = date.getFullYear();
-        var month = date.getMonth() + 1;
-        var day = date.getDate();
-        return [year, pad(month), pad(day)].join('-');
-      }
-      function onClickEvent(evt, data) {
-        if (!data || typeof data.id !== 'number') {
-          return false;
-        }
-        var d = BASE_DATE.valueOf() + (data.id * 3600 * 24 * 1000);
-        var ds = formatDate(new Date(d));
-        infoNode.text(ds + ': ' + textList[data.value]);
-      }
-
-      var startDate = new Date("2014-07-01");
-      var endDate = new Date();
-      var gridSize = 14;
-      var gitMatrix = new Chart.GitMatrix("chart", {
-        "startDate": startDate,
-        "endDate": endDate,
-        "gridSize": gridSize,
-        "textList": textList,
-        "click": onClickEvent
-      });
-
-      var url = 'https://api.github.com/repos/rockdai/my_diet/contents/data.json';
-      $.ajax({
-        dataType: "json",
-        url: url,
-        headers: {
-          'Accept': 'application/vnd.github.v3+json',
-          'Content-Type': 'application/json;charset=UTF-8'
-        },
-        success: function (data) {
-          $('#loading').hide();
-          data = data || {};
-          data = decodeFromBase64(data.content);
-          data = JSON.parse(data);
-          gitMatrix.loadData(data);
-          gitMatrix.render();
-        }
-      });
-    </script>
   </body>
 </html>
