@@ -1,5 +1,5 @@
 window.MillConfig = {
-  title: 'rockdai.github.io',
+  title: 'rockdai.com',
   github: {
     owner: 'rockdai',
     repo: 'rockdai.github.io'
