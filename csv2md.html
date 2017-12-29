@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no">
+  <title>CSV2MARKDOWN</title>
+  <script src="http://upcdn.b0.upaiyun.com/libs/jquery/jquery-2.0.3.min.js"></script>
+
+  <style type="text/css">
+    body {
+      margin: 0 10px;
+      padding: 0;
+      font-family: 'Helvetica Neue', Helvetica, Arial, 'Microsoft YaHei', 'Microsoft JhengHei', STHeiti, MingLiu;
+      color: #000000;
+    }
+    h1 {
+      margin: 10px 0;
+    }
+    .options-panel {
+      margin: 10px 0;
+    }
+    .txt {
+      width: 49%;
+      height: 600px;
+      border: 1px solid #cccccc;
+      font-size: 16px;
+    }
+    .txt:last-child {
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>csv to markdown</h1>
+  <div class="container">
+    <div class="options-panel">
+      <input type="checkbox" id="no-thead">
+      <label for="no-thead">无表头</label>
+    </div>
+    <textarea class="txt input"></textarea>
+    <textarea class="txt output"></textarea>
+  </div>
+
+  <script>
+    var inputNode = $('.input');
+    var outputNode = $('.output');
+    var noTheadNode = $('#no-thead');
+
+    function parseCsv(str) {
+      var rawLines = str.trim().split(/\r?\n/);
+      var res = [];
+      rawLines.forEach(function (line) {
+        var fields = line.trim().split(/\,/);
+        res.push(fields.map(function(field) {
+          return field.replace(/^"|"$/ig, '');
+        }));
+      });
+      return res;
+    }
+
+    function buildMdTable(thead, tbody) {
+      var lines = [];
+      if (thead && thead.length) {
+        var placeholder = [];
+        var theadData = thead.map(function(item) {
+          placeholder.push(' :--- ');
+          return ' ' + item + ' ';
+        });
+        lines.push('|' + theadData.join('|') + '|');
+        lines.push('|' + placeholder.join('|') + '|');
+      }
+      tbody.forEach(function(tbodyLine) {
+        var tbodyLineData = tbodyLine.map(function(item) {
+          return ' ' + item + ' ';
+        });
+        lines.push('|' + tbodyLineData.join('|') + '|');
+      });
+      return lines.join('\n');
+    }
+
+    function renderResult() {
+      var cols = parseCsv(inputNode.val());
+      var result = buildMdTable(cols[0], cols.slice(1));
+      outputNode.val(result);
+    }
+
+    inputNode.on('input propertychange', renderResult);
+
+    var storage = window.localStorage;
+    if (storage) {
+      noTheadNode.prop('checked', storage.getItem('noThead') === 'true');
+    }
+    noTheadNode.on('change', function (evt) {
+      if (storage) {
+        storage.setItem('noThead', noTheadNode.prop('checked'));
+      }
+      renderResult();
+    });
+
+  </script>
+</body>
